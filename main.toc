@@ -1,0 +1,78 @@
+\babel@toc {bahasa}{}\relax 
+\contentsline {chapter}{HALAMAN JUDUL}{i}{chapter*.1}%
+\contentsline {chapter}{LEMBAR PERSETUJUAN PEMBIMBING}{ii}{section*.2}%
+\contentsline {chapter}{PENGESAHAN TIM PENGUJI SKRIPSI}{iii}{section*.3}%
+\contentsline {chapter}{HALAMAN PERNYATAAN KEASLIAN}{iv}{section*.4}%
+\contentsline {chapter}{MOTTO}{v}{chapter*.5}%
+\contentsline {chapter}{HALAMAN PERSEMBAHAN}{vi}{chapter*.6}%
+\contentsline {chapter}{KATA PENGANTAR}{vii}{chapter*.7}%
+\contentsline {chapter}{DAFTAR ISI}{ix}{section*.8}%
+\contentsline {chapter}{DAFTAR TABEL}{xii}{section*.10}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xiii}{section*.12}%
+\contentsline {chapter}{ABSTRAK}{xvi}{chapter*.14}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{ABSTRACT}{xvii}{chapter*.15}%
+\babel@toc {bahasa}{}\relax 
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1.}Latar Belakang Masalah}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2.}Rumusan Masalah}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.3.}Tujuan Penelitian}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4.}Manfaat Penelitian}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.5.}Batasan Masalah}{9}{section.1.5}%
+\contentsline {section}{\numberline {1.6.}Sistematika Penulisan}{10}{section.1.6}%
+\contentsline {chapter}{\numberline {II}TINJAUAN PUSTAKA}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1.}Kanker}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2.}Kanker Kulit}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1.}\textit {Melanoma} (MEL)}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2.}\textit {Actinic Keratosis} (AK)}{15}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3.}\textit {Melanocytic Nevus} (NV)}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4.}\textit {Basal Cell Carcinoma} (BCC)}{16}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5.}\textit {Squamous Cell Carcinoma} (SCC)}{17}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6.}\textit {Dermatofibroma} (DF)}{18}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7.}\textit {Benign Keratosis Lesion} (BKL)}{18}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8.}\textit {Vascular Lesion} (VASC)}{19}{subsection.2.2.8}%
+\contentsline {section}{\numberline {2.3.}Citra Digital}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1.}Citra RGB}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2.}Citra \textit {Grayscale}}{22}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3.}Citra \textit {Binary}}{23}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4.}Citra Dermoskopi}{23}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4.}\textit {Resize}}{24}{section.2.4}%
+\contentsline {section}{\numberline {2.5.}Deteksi Objek}{25}{section.2.5}%
+\contentsline {section}{\numberline {2.6.}\textit {Convolutional Neural Networks} (CNN)}{26}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1.}\textit {Convolutional Layer}}{27}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2.}\textit {Pooling Layer}}{29}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3.}\textit {Upsample Layer}}{30}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4.}\textit {Batch Normalization} (BN)}{32}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{32}{subsection.2.6.5}%
+\contentsline {subsection}{\numberline {2.6.6.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{33}{subsection.2.6.6}%
+\contentsline {section}{\numberline {2.7.}\textit {You Only Look Once version 7} (YOLO-v7)}{34}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1.}\textit {Efficient Layer Aggregation Networks} (ELAN)}{36}{subsection.2.7.1}%
+\contentsline {section}{\numberline {2.8.}\textit {Confusion Matrix}}{37}{section.2.8}%
+\contentsline {section}{\numberline {2.9.}\textit {Intersection over Union} (IoU)}{38}{section.2.9}%
+\contentsline {section}{\numberline {2.10.}\textit {mean Average Precision} (mAP)}{40}{section.2.10}%
+\contentsline {section}{\numberline {2.11.}Integrasi Keislaman}{41}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1.}Hikmah Orang Sakit}{42}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2.}Ikhtiar Orang Sakit}{43}{subsection.2.11.2}%
+\contentsline {chapter}{\numberline {III}METODE PENELITIAN}{45}{chapter.3}%
+\contentsline {section}{\numberline {3.1.}Jenis Penelitian}{45}{section.3.1}%
+\contentsline {section}{\numberline {3.2.}Jenis dan Sumber Data}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.3.}Kerangka Penelitian}{46}{section.3.3}%
+\contentsline {chapter}{\numberline {IV}HASIL DAN PEMBAHASAN}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1.}\textit {Preprocessing}}{49}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1.}\textit {Resize}}{49}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2.}\textit {Annotation}}{51}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2.}Pelatihan Model}{53}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1.}\textit {Convolutional Layer}}{54}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2.}\textit {Batch Normalization}}{58}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{59}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{61}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5.}\textit {Pooling Layer}}{63}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6.}\textit {Upsample Layer}}{66}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7.}\textit {Efficient Layer Aggregation Networks (ELAN)}}{68}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8.}\textit {Intesection over Union} (IoU)}{69}{subsection.4.2.8}%
+\contentsline {section}{\numberline {4.3.}Pengujian dan Evaluasi Sistem}{70}{section.4.3}%
+\contentsline {section}{\numberline {4.4.}Integrasi Keilmuan}{81}{section.4.4}%
+\contentsline {chapter}{\numberline {V}PENUTUP}{84}{chapter.5}%
+\contentsline {section}{\numberline {5.1.}Kesimpulan}{84}{section.5.1}%
+\contentsline {section}{\numberline {5.2.}Saran}{85}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{85}{Item.36}%

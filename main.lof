@@ -1,0 +1,53 @@
+\babel@toc {bahasa}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {bahasa}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Kanker kulit MEL\relax }}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Kanker kulit AK\relax }}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Kanker kulit NV\relax }}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Kanker kulit BCC\relax }}{17}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Kanker kulit SCC\relax }}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Kanker kulit DF\relax }}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Kanker kulit BKL\relax }}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Kanker kulit VASC\relax }}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Citra warna beserta nilai pikselnya\relax }}{22}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Citra \textit {grayscale} beserta nilai pikselnya\relax }}{22}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Citra \textit {binary} beserta nilai pikselnya\relax }}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Citra \textit {dermoscopy} yang mengandung kanker kulit \textit {melanoma}\relax }}{24}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces (a) Citra sebelum diubah berukuran $500\times 500$ piksel (b) Citra setelah diubah berukuran $200\times 200$ piksel\relax }}{25}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Deteksi objek yang dilakukan oleh model YOLO\relax }}{26}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Arsitektur dasar dari CNN\relax }}{27}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Cara kerja filter pada \textit {convolutional layer}\relax }}{28}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Susunan arsitektur CBS pada YOLOv7\relax }}{29}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Cara kerja \textit {max pooling} yang digunakan pada YOLO-v7\relax }}{30}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Susunan arsitektur MP pada YOLOv7\relax }}{30}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Proses \textit {upsample} pada YOLOv7\relax }}{31}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Susunan arsitektur UP pada YOLOv7\relax }}{31}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Grafik Leaky ReLU\relax }}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Perbandingan grafik SiLU dan ReLU\relax }}{34}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Arsitektur YOLO-v7\relax }}{35}{figure.caption.39}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Struktur jaringan ELAN (a) ELAN; (b) ELAN-W\relax }}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Menunjukkan kondisi kotak pembatas (a) IoU; (b) \textit {Overlap Area} (OA); (c) \textit {Union Area} (UA)\relax }}{38}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Menunjukkan kondisi nilai IoU (a) Nilai IoU kurang baik; (b) Nilai IoU baik; (c) Nilai IoU sangat baik\relax }}{40}{figure.caption.43}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Dataset citra dermoskopi kanker kulit (a) AK; (b) BCC; (c) BKL; (d) DF; (e) MEL; (f) NV; (g) SCC; (h) VASC;\relax }}{46}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagram alir pada penelitian ini\relax }}{47}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tahap \textit {pre-processing} (a) Citra asli; (b) Citra setelah menerapkan \textit {annotation}; (c) Citra setelah menerapkan \textit {resize}\relax }}{48}{figure.caption.46}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Proses \textit {preprocessing} menggunakan \textit {resize} (a) Citra kanker kulit sebelum \textit {resize}; (b) Citra kanker kulit setelah \textit {resize}\relax }}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Proses perhitungan \textit {annotation} pada citra kanker kulit\relax }}{51}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ilustrasi operasi konvolusi data masukan dengan filter yang menghasilkan \textit {feature map}\relax }}{55}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Visualisasi \textit {feature map} pada YOLOv7\relax }}{57}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Visualisasi \textit {feature map} setelah melewati \textit {batch normalization layer} pada YOLOv7\relax }}{59}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Visualisasi \textit {feature map} setelah melewati fungsi aktivasi Leaky ReLU pada YOLOv7\relax }}{61}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualisasi \textit {feature map} setelah melewati fungsi aktivasi SiLU pada YOLOv7\relax }}{63}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Visualisasi \textit {feature map} setelah melewati \textit {max-pooling layer} pada YOLOv7\relax }}{66}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Visualisasi \textit {feature map} setelah melewati \textit {upsample layer} pada YOLOv7\relax }}{67}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Visualisasi \textit {feature map} setelah melewati jaringan \textit {ELAN} pada YOLOv7\relax }}{69}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Hasil \textit {confusion matrix} model terbaik YOLOv7\relax }}{74}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Hasil \textit {precision} dan \textit {recall} model terbaik YOLOv7\relax }}{76}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Hasil \textit {confusion matrix} model terbaik YOLOv7 Tiny\relax }}{77}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Hasil \textit {precision} dan \textit {recall} model terbaik YOLOv7 Tiny\relax }}{78}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Hasil mAP model terbaik YOLOv7 dan YOLOv7 Tiny\relax }}{80}{figure.caption.63}%
+\addvspace {10\p@ }
