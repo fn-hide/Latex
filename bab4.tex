@@ -76,7 +76,7 @@ Data yang digunakan pada penelitian ini yaitu Dataset ISIC 2019 dengan 1600 data
                                 &= 0.27\qquad\qquad                             &   &= 0.47\\
     \end{alignat*}
 
-    Pada perhitungan di atas, $(x, y)$ merepresentasikan nilai koordinat, $w$ merepresentasikan lebar \textit{bounding box}, dan $h$ merepresentasikan tinggi \textit{bounding box}. Keempat nilai tersebut direpresentasikan dalam bentuk yang sudah dinormalisasi. Hasil dari proses \textit{annotation} seperti terlihat pada Tabel \ref{tab:d-annotation} dimana $c$ merepresentasikan kode kelas yang ada pada dataset.
+    Pada perhitungan di atas, $(x, y)$ merepresentasikan nilai koordinat \textit{bounding box}, $w$ merepresentasikan lebar \textit{bounding box}, dan $h$ merepresentasikan tinggi \textit{bounding box}. Keempat nilai tersebut direpresentasikan dalam bentuk yang sudah dinormalisasi. Hasil dari proses \textit{annotation} seperti terlihat pada Tabel \ref{tab:d-annotation} dimana $c$ merepresentasikan kode kelas yang ada pada dataset.
 
     \begin{table}[H]
         \caption{\textit{Annotation}}
@@ -118,46 +118,46 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     Perhitungan di atas memperlihatkan bahwa ukuran \textit{feature map} dari operasi konvolusi data masukan berukuran $640\times 640\times 3$ dengan \textit{filter} berukuran $3\times 3\times 64$ dan $s=2$ serta $p=1$ adalah $320\times 320\times 64$. Ilustrasi perhitungan operasi konvolusi data masukan dengan \textit{filter} dapat dicontohkan seperti di bawah ini.
 
     \begin{alignat*}{5}
-        R_{0, 0} &= &&\bigl( I_{r}(0, 0)\times F_{r}(0, 0) + I_{r}(0, 1)\times F_{r}(0, 1) + I_{r}(0, 2)\times F_{r}(0, 2) + \cdots + \\
-        & &&I_{r}(2, 2)\times F_{r}(2, 2) \bigr) + \bigl( I_{g}(0, 0)\times F_{g}(0, 0) + I_{g}(0, 1)\times F_{g}(0, 1) + \\
-        & &&I_{g}(0, 2)\times F_{g}(0, 2) + \cdots + I_{g}(2, 2)\times F_{g}(2, 2) \bigr) + \bigl( I_{b}(0, 0)\times F_{b}(0, 0) + \\
-        & &&I_{b}(0, 1)\times F_{b}(0, 1) + I_{b}(0, 2)\times F_{b}(0, 2) + \cdots + I_{b}(2, 2)\times F_{b}(2, 2) \bigr) \\
+        R_{0, 0}        &=  &&\bigl( I_{r}(0, 0)\times F_{r}(0, 0) + I_{r}(0, 1)\times F_{r}(0, 1) + I_{r}(0, 2)\times F_{r}(0, 2) + \cdots + \\
+                        &   &&I_{r}(2, 2)\times F_{r}(2, 2) \bigr) + \bigl( I_{g}(0, 0)\times F_{g}(0, 0) + I_{g}(0, 1)\times F_{g}(0, 1) + \\
+                        &   &&I_{g}(0, 2)\times F_{g}(0, 2) + \cdots + I_{g}(2, 2)\times F_{g}(2, 2) \bigr) + \bigl( I_{b}(0, 0)\times F_{b}(0, 0) + \\
+                        &   &&I_{b}(0, 1)\times F_{b}(0, 1) + I_{b}(0, 2)\times F_{b}(0, 2) + \cdots + I_{b}(2, 2)\times F_{b}(2, 2) \bigr) \\
         % === Batas rumus
-        &= &&\bigl( (0.925490\times 0.19116) + (0.925490\times 0.17358) + (0.925490\times \\
-        & &&0.17896) + \cdots + (0.913725\times 0.13184) \bigr) + \bigl( (0.776471\times 0.19116) + \\
-        & &&(0.776471\times 0.17358) + (0.776471\times 0.17896) + \cdots + (0.764706\times \\
-        & &&0.13184) \bigr) + \bigl( (0.937255\times 0.19116) + (0.937255\times 0.17358) + \\
-        & &&(0.937255\times 0.17896) + \cdots + (0.925490\times 0.13184) \bigr) \\
-        &= &&0.404922 \\
+                        &=  &&\bigl( (0.925490\times 0.19116) + (0.925490\times 0.17358) + (0.925490\times \\
+                        &   &&0.17896) + \cdots + (0.913725\times 0.13184) \bigr) + \bigl( (0.776471\times 0.19116) + \\
+                        &   &&(0.776471\times 0.17358) + (0.776471\times 0.17896) + \cdots + (0.764706\times \\
+                        &   &&0.13184) \bigr) + \bigl( (0.937255\times 0.19116) + (0.937255\times 0.17358) + \\
+                        &   &&(0.937255\times 0.17896) + \cdots + (0.925490\times 0.13184) \bigr) \\
+                        &=  &&0.404922 \\
         \vdots \\
-        R_{319, 319} &= &&\bigl( I_{r}(638, 638)\times F_{r}(638, 638) + I_{r}(638, 639)\times F_{r}(638, 639) + \\
-        & &&I_{r}(638, 640)\times F_{r}(638, 640) + \cdots + I_{r}(640, 640)\times F_{r}(640, 640) \bigr) + \\
-        & &&\bigl( I_{g}(638, 638)\times F_{g}(638, 638) + I_{g}(638, 639)\times F_{g}(638, 639) + \\
-        & &&I_{g}(638, 640)\times F_{g}(638, 640) + \cdots + I_{g}(640, 640)\times F_{g}(640, 640) \bigr) + \\
-        & &&\bigl( I_{b}(638, 638)\times F_{b}(638, 638) + I_{b}(638, 639)\times F_{b}(638, 639) + \\
-        & &&I_{b}(638, 640)\times F_{b}(638, 640) + \cdots + I_{b}(640, 640)\times F_{b}(640, 640) \bigr) \\
+        R_{319, 319}    &=  &&\bigl( I_{r}(638, 638)\times F_{r}(638, 638) + I_{r}(638, 639)\times F_{r}(638, 639) + \\
+                        &   &&I_{r}(638, 640)\times F_{r}(638, 640) + \cdots + I_{r}(640, 640)\times F_{r}(640, 640) \bigr) + \\
+                        &   &&\bigl( I_{g}(638, 638)\times F_{g}(638, 638) + I_{g}(638, 639)\times F_{g}(638, 639) + \\
+                        &   &&I_{g}(638, 640)\times F_{g}(638, 640) + \cdots + I_{g}(640, 640)\times F_{g}(640, 640) \bigr) + \\
+                        &   &&\bigl( I_{b}(638, 638)\times F_{b}(638, 638) + I_{b}(638, 639)\times F_{b}(638, 639) + \\
+                        &   &&I_{b}(638, 640)\times F_{b}(638, 640) + \cdots + I_{b}(640, 640)\times F_{b}(640, 640) \bigr) \\
         % === Batas Rumus
-        &= &&\bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + (0.937255\times \\
-        & &&0.17896) + \cdots + (0.949020\times 0.13184) \bigr) + \bigl( (0.760784\times 0.19116) + \\
-        & &&(0.764706\times 0.17358) + (0.756863\times 0.17896) + \cdots + (0.768627\times \\
-        & &&0.13184) \bigr) + \bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + \\
-        & &&(0.937255\times 0.17896) + \cdots + (0.949020\times 0.13184) \bigr) \\
-        &= &&0.258519 \\
+                        &=  &&\bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + (0.937255\times \\
+                        &   &&0.17896) + \cdots + (0.949020\times 0.13184) \bigr) + \bigl( (0.760784\times 0.19116) + \\
+                        &   &&(0.764706\times 0.17358) + (0.756863\times 0.17896) + \cdots + (0.768627\times \\
+                        &   &&0.13184) \bigr) + \bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + \\
+                        &   &&(0.937255\times 0.17896) + \cdots + (0.949020\times 0.13184) \bigr) \\
+                        &=  &&0.258519 \\
     \end{alignat*}
 
     Perhitungan di atas akan menghasilkan \textit{feature map} hasil dari operasi data masukan dengan \textit{filter} sebagaimana matriks di bawah ini. Perhitungan tersebut sesuai dengan nilai $k$ pada \textit{filter} karena jumlah \textit{feature map} yang dihasilkan bergantung pada jumlah \textit{filter} yang dipakai atau sama dengan $d=k$ dimana $d$ adalah dimensi \textit{feature map} dan $k$ adalah jumlah \textit{filter}.
 
     \begin{align*}
-        R_{(320, 320, 0)} = 
+        R_{(:, :, 0)} = 
         \begin{pmatrix}
             0.404922 & 0.445536 & 0.445536 & 0.445536 & \cdots & 0.458136 \\
             0.349199 & 0.309777 & 0.309777 & 0.309777 & \cdots & 0.326002 \\
             0.348241 & 0.309294 & 0.309294 & 0.309294 & \cdots & 0.326987 \\
             0.348800 & 0.310123 & 0.310123 & 0.310123 & \cdots & 0.340638 \\
             0.350666 & 0.311744 & 0.311837 & 0.311837 & \cdots & 0.337295 \\
-            \vdots   & \vdots   & \vdots   & \vdots & \ddots &\vdots \\
+            \vdots   & \vdots   & \vdots   & \vdots   & \ddots &\vdots \\
             0.265303 & 0.246458 & 0.250151 & 0.255221 & \cdots & 0.258519 \\
-        \end{pmatrix}
+        \end{pmatrix}_{320\times 320}
     \end{align*}
 
     \textit{Feature map} di atas adalah \textit{feature map} dengan indeks 0 atau \textit{feature map} pertama dari 64 \textit{feature map} yang dihasilkan pada \textit{convolutional layer} di YOLOv7. \textit{Feature map} di atas berukuran $320\times 320$ dan jika beberapa hasil \textit{feature map} divisualisasikan akan terlihat seperti Gambar \ref{fig:d-feamap}.
@@ -187,7 +187,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     Hasil perhitungan masing-masing nilai untuk \textit{batch normalization} seperti terlihat pada matriks di bawah ini.
 
     \begin{align*}
-        R_{(320, 320, 0)} = 
+        R_{(:, :, 0)} = 
         \begin{pmatrix}
             -0.589056 & 0.861231  & 0.861231  & 0.861231  & \cdots & -0.807409 \\
             -2.578891 & -3.986590 & -3.986590 & -3.986590 & \cdots & -2.776101 \\
@@ -196,7 +196,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -2.526499 & -3.916370 & -3.913023 & -3.913023 & \cdots & -3.003972 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -5.574710 & -6.247649 & -6.115799 & -5.934733 & \cdots & -5.816965 \\
-        \end{pmatrix}
+        \end{pmatrix}_{320\times 320}
     \end{align*}
 
     Nilai pada \textit{feature map} hasil normalisasi memiliki interval yang tidak terlalu jauh seperti terlihat pada matriks di atas. Visualisasi \textit{feature map} yang telah melewati \textit{batch normalization layer} seperti terlihat pada Gambar \ref{fig:d-banorm}.
@@ -228,7 +228,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     Hasil \textit{feature map} yang telah diaktivasi menggunakan Leaky ReLU seperti terlihat di bawah ini.
 
     \begin{align*}
-        R_{(320, 320, 0)} = 
+        R_{(:, :, 0)} = 
         \begin{pmatrix}
             -0.005891 & 0.861231  & 0.861231  & 0.861231  & \cdots & -0.008074 \\
             -0.025789 & -0.039866 & -0.039866 & -0.039866 & \cdots & -0.027761 \\
@@ -237,7 +237,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -0.025265 & -0.039164 & -0.039130 & -0.039130 & \cdots & -0.030040 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -0.055747 & -0.062476 & -0.061158 & -0.059347 & \cdots & -0.058170 \\
-        \end{pmatrix}
+        \end{pmatrix}_{320\times 320}
     \end{align*}
 
     Perhitungan fungsi aktivasi Leaky ReLU terjadi hingga pada lapisan terakhir. Visualisasi \textit{feature map} yang telah melewati fungsi aktivasi Leaky ReLU seperti terlihat pada Gambar \ref{fig:d-lrelu}.
@@ -266,7 +266,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     Hasil \textit{feature map} yang telah melewati fungsi aktivasi SiLU seperti terlihat pada matriks di bawah ini.
 
     \begin{align*}
-        R_{(320, 320, 0)} = 
+        R_{(:, :, 0)} = 
         \begin{pmatrix}
             -0.210206 & 0.605375  & 0.605375  & 0.605375  & \cdots & -0.249040 \\
             -0.181836 & -0.072654 & -0.072654 & -0.072654 & \cdots & -0.162761 \\
@@ -275,7 +275,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -0.187015 & -0.076465 & -0.076651 & -0.076651 & \cdots & -0.141928 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -0.021063 & -0.012066 & -0.013472 & -0.015661 & \cdots & -0.017264 \\
-        \end{pmatrix}
+        \end{pmatrix}_{320\times 320}
     \end{align*}
 
     Perhitungan fungsi aktivasi SiLU terjadi hingga pada lapisan terakhir. Visualisasi \textit{feature map} yang telah melewati fungsi aktivasi Silu seperti terlihat pada Gambar \ref{fig:d-silu}.
@@ -303,7 +303,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     Hasil \textit{feature map} setelah melewati \textit{pooling layer} seperti terlihat di bawah ini.
 
     \begin{align*}
-        R_{(320, 320, 0)} = 
+        R_{(:, :, 0)} = 
         \begin{pmatrix}
             0.605375  & -0.143407 & -0.139577 & -0.148889 & \cdots & -0.221489 \\
             -0.185320 & -0.084338 & -0.053553 & -0.076679 & \cdots & -0.146808 \\
@@ -312,7 +312,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -0.202485 & -0.085817 & -0.061791 & -0.076593 & \cdots & -0.189475 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -0.192949 & -0.270050 & -0.256753 & -0.253126 & \cdots & -0.128279 \\
-        \end{pmatrix}
+        \end{pmatrix}_{80, 80}
     \end{align*}
 
     Visualisasi \textit{feature map} yang telah melewati \textit{max-pooling layer} seperti terlihat pada Gambar \ref{fig:d-maxpool}.
