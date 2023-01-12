@@ -35,8 +35,8 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Diagram alir pada penelitian ini\relax }}{47}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Tahap \textit {pre-processing} (a) Citra asli; (b) Citra setelah menerapkan \textit {annotation}; (c) Citra setelah menerapkan \textit {resize}\relax }}{48}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Proses \textit {preprocessing} menggunakan \textit {resize} (a) Citra kanker kulit sebelum \textit {resize}; (b) Citra kanker kulit setelah \textit {resize}\relax }}{51}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Proses perhitungan \textit {annotation} pada citra kanker kulit\relax }}{51}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {Preprocessing} menggunakan \textit {resize} (a) Citra kanker kulit sebelum dilakukan \textit {resize}; (b) Citra kanker kulit setelah dilakukan \textit {resize}\relax }}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustrasi proses \textit {annotation}\relax }}{51}{figure.caption.48}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Ilustrasi operasi konvolusi data masukan dengan filter yang menghasilkan \textit {feature map}\relax }}{55}{figure.caption.50}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Visualisasi \textit {feature map} pada YOLOv7\relax }}{57}{figure.caption.51}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Visualisasi \textit {feature map} setelah melewati \textit {batch normalization layer} pada YOLOv7\relax }}{59}{figure.caption.52}%
