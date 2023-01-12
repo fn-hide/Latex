@@ -16,9 +16,9 @@
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1.}Latar Belakang Masalah}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2.}Rumusan Masalah}{8}{section.1.2}%
-\contentsline {section}{\numberline {1.3.}Tujuan Penelitian}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.3.}Tujuan Penelitian}{9}{section.1.3}%
 \contentsline {section}{\numberline {1.4.}Manfaat Penelitian}{9}{section.1.4}%
-\contentsline {section}{\numberline {1.5.}Batasan Masalah}{9}{section.1.5}%
+\contentsline {section}{\numberline {1.5.}Batasan Masalah}{10}{section.1.5}%
 \contentsline {section}{\numberline {1.6.}Sistematika Penulisan}{10}{section.1.6}%
 \contentsline {chapter}{\numberline {II}TINJAUAN PUSTAKA}{12}{chapter.2}%
 \contentsline {section}{\numberline {2.1.}Kanker}{12}{section.2.1}%
@@ -64,7 +64,7 @@
 \contentsline {section}{\numberline {4.2.}Pelatihan Model}{53}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1.}\textit {Convolutional Layer}}{54}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2.}\textit {Batch Normalization}}{58}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{59}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{60}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{61}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5.}\textit {Pooling Layer}}{63}{subsection.4.2.5}%
 \contentsline {subsection}{\numberline {4.2.6.}\textit {Upsample Layer}}{66}{subsection.4.2.6}%

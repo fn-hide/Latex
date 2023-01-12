@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex main"] 1673501396 "main.aux" "main.bbl" "main" 1673501408
+["bibtex main"] 1673514242 "main.aux" "main.bbl" "main" 1673514255
   "Skripsi.bib" 1673501382 164853 fef7c602eb9dc36414383ae0e2df40be ""
   "c:/texlive/2022/texmf-dist/bibtex/bst/apalike2/apalike2.bst" 1664179718 26644 77647ad43a99e9d8b2661f2ca815cba7 ""
-  "main.aux" 1673501408 34058 2f407f54edcdfdc76aeadf6326ef742a "pdflatex"
+  "main.aux" 1673514254 34080 ca24c966aeba3f233ccb3944d910147b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1673501397 "d:/Huda 2019/Latex/main.tex" "main.pdf" "main" 1673501408
-  "bab1.tex" 1673489741 18491 7831c1ad1cba4c0ee260eb117d31dea9 ""
+["pdflatex"] 1673514243 "d:/Huda 2019/Latex/main.tex" "main.pdf" "main" 1673514255
+  "bab1.tex" 1673514228 18748 18581ba1f505fd72814d53f918168d17 ""
   "bab2.tex" 1673429787 48496 b7e5143179e7424cfbc3f2cbe854b484 ""
   "bab3.tex" 1673430240 4921 9fc569a03eba8e4bbf79f7dbd3dc54df ""
-  "bab4.tex" 1673490457 52013 09cb58ed01f39af5e61a0cbfb4f39c2d ""
+  "bab4.tex" 1673513060 52333 1d34659727953f5771b8c3ae5222d924 ""
   "bab5.tex" 1673411776 3247 90d48ff5ed688a3026a2cfdce1a58605 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1664182465 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1664182862 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -300,7 +300,7 @@
   "img/bab2/up.png" 1673411776 9088 e75ca69e04436078ba6d047d512f1abd ""
   "img/bab2/vasc.jpg" 1673411776 136546 82202b808eb452c192ab6ff50966788c ""
   "img/bab2/warna.png" 1673411776 1849255 39d4b8d54ce6d2cce23e74bb0320a3c9 ""
-  "img/bab2/yolov7-architecture.png" 1673411776 302079 df3406a0c13840eba00dbb0db33319e6 ""
+  "img/bab2/yolov7-architecture.png" 1673510743 301455 8b1bf084a16535cc2292edfa01a5bebf ""
   "img/bab3/ak.png" 1673411776 89245 0f737243a9eeddca969d08e1ad7e8991 ""
   "img/bab3/annotation.png" 1673411776 1303232 325c5d254b9494f4452fe01ae30d2865 ""
   "img/bab3/bcc.png" 1673411776 86163 bcf5b67059ddba99c57cc72f2d8b8401 ""
@@ -328,13 +328,13 @@
   "img/bab4/silu-layer.png" 1673411776 512387 1a7fde4c5fd6bd56f8cd99331f33ea04 ""
   "img/bab4/up-layer.png" 1673411776 60502 403df2a266a6cc461822c0c78ff2a306 ""
   "logouinsa.png" 1673411776 61952 698773f75688d2299a303e50e04f234a ""
-  "main.aux" 1673501408 34058 2f407f54edcdfdc76aeadf6326ef742a "pdflatex"
-  "main.bbl" 1673501397 18828 a51c67fc91ca199b2bb4f204da7975cc "bibtex main"
-  "main.lof" 1673501408 6755 0be53b09633474190dddfe31e3d321f9 "pdflatex"
-  "main.lot" 1673501408 586 90da0cd0936f4486c16a919976d76a0c "pdflatex"
-  "main.out" 1673501408 11763 0e48206dec739b66f55cf5ade8a6ca98 "pdflatex"
+  "main.aux" 1673514254 34080 ca24c966aeba3f233ccb3944d910147b "pdflatex"
+  "main.bbl" 1673514243 18828 a51c67fc91ca199b2bb4f204da7975cc "bibtex main"
+  "main.lof" 1673514254 6765 b375f2cc0e3f6d8f67abc0fb3a62ce70 "pdflatex"
+  "main.lot" 1673514254 586 90da0cd0936f4486c16a919976d76a0c "pdflatex"
+  "main.out" 1673514254 11763 0e48206dec739b66f55cf5ade8a6ca98 "pdflatex"
   "main.tex" 1673499512 10207 350d8969d21f16f988a5bb4577fc25b0 ""
-  "main.toc" 1673501408 6557 fddc8c04cc9097c667b8b4b96ad7176f "pdflatex"
+  "main.toc" 1673514254 6558 855a7de0a136cb470e1111ef80287a2a "pdflatex"
   "mathuinsa.cls" 1673411776 18995 2d549d0f2a3fbdc518e9b5f1591eaa99 ""
   (generated)
   "main.aux"

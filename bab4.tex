@@ -98,54 +98,54 @@ Data yang digunakan pada penelitian ini yaitu Dataset ISIC 2019 dengan 1600 data
 \section{Pelatihan Model}
 Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature learning} dan \textit{object detection} sehingga mendapatkan model terbaik atau bisa disebut proses pelatihan model. Model terbaik didapatkan dari beberapa percobaan yang dilakukan pada proses pelatihan model. Penelitian ini melakukan beberapa percobaan untuk mendapatkan model terbaik. Terdapat tiga jenis percobaan, yaitu uji coba model YOLOv7, uji coba \textit{batch size}, dan uji coba \textit{epochs}. Penelitian ini melakukan uji coba versi YOLOv7, yaitu YOLOv7 dan YOLOv7 Tiny dengan mempertimbangkan waktu komputasi yang dibutuhkan untuk mendapatkan model yang optimal karena YOLOv7 Tiny masih mempertahankan arsitektur YOLOv4 dan memiliki arsitektur yang tidak lebih kompleks daripada YOLOv7. Hal ini akan sangat mempengaruhi waktu komputasi. \textit{Batch size} juga dilakukan uji coba untuk mendapatkan nilai yang optimal dengan akurasi tinggi pada proses pelatihan model. Penelitian ini menggunakan beberapa nilai \textit{batch size}, yaitu 32, 64, dan 128. Uji coba terakhir pada penelitian ini, yaitu \textit{epochs} dengan mempertimbangkan waktu komputasi dan akurasi yang meningkat seiring bertambahnya \textit{epochs}. Penelitian ini menggunakan beberapa nilai \textit{epochs}, yaitu 300, 600, dan 1200.
     \subsection{\textit{Convolutional Layer}}
-    Sebagian besar arsitektur YOLOv7 tersusun dari \textit{convolutional layer} seperti terlihat pada Gambar \ref{fig:yolov7-archi}. Setiap operasi konvolusi pada YOLOv7 dilengkapi dengan \textit{Batch Normalization} dan fungsi aktivasi \textit{Sigmoid-weighted Linear Unit}. Pada \textit{convolutiona layer} terjadi proses pembelajaran fitur dari citra masukan dan \textit{feature map} dengan \textit{filter} yang ada pada YOLOv7. YOLOv7 menggunakan 3 operasi konvolusi dengan komposisi yang berbeda pada ukuran \textit{filter} ($f$) dan banyak \textit{stride} ($s$), yaitu operasi konvolusi dengan $f=1\times 1$ dan $s=1$, $f=3\times 3$ dan $s=1$, $f=3\times 3$ dan $s=2$. Nilai $f$ dan $s$ ditentukan oleh arsitektur YOLOv7. Nilai yang ada pada filter ditentukan secara acak oleh arsitektur YOLOv7 yang terdiri dari 3 lapisan sesuai dengan data masukan yang berupa citra RGB dengan 3 kanal. Contoh perhitungan \textit{convolutional layer} menggunakan data masukan citra kanker kulit berukuran $640\times 640\times 3$ dengan 64 filter berukuran $3\times 3$ pada masing-masing kanal seperti terlihat pada Gambar \ref{fig:d-convol}.
+    Sebagian besar arsitektur YOLOv7 tersusun dari \textit{convolutional layer} seperti terlihat pada Gambar \ref{fig:yolov7-archi}. Setiap operasi konvolusi pada YOLOv7 dilengkapi dengan \textit{Batch Normalization} dan fungsi aktivasi \textit{Sigmoid-weighted Linear Unit}. Pada \textit{convolutiona layer} terjadi proses pembelajaran fitur dari citra masukan dan \textit{feature map} dengan \textit{filter} yang ada pada YOLOv7. YOLOv7 menggunakan 3 operasi konvolusi dengan komposisi yang berbeda pada ukuran \textit{filter} ($f$) dan jumlah \textit{stride} ($s$), yaitu operasi konvolusi dengan $f=1\times 1$ dan $s=1$, $f=3\times 3$ dan $s=1$, $f=3\times 3$ dan $s=2$. Nilai $f$ dan $s$ ditentukan oleh arsitektur YOLOv7. Sedangkan \textit{padding} $(p)$ pada seluruh \textit{convolutional layer} di YOLOv7 bernilai 1 kecuali \textit{maxpool layer} yang tidak menggunakan \textit{padding}. Nilai yang ada pada \textit{filter} ditentukan secara acak oleh arsitektur YOLOv7 yang terdiri dari 3 lapisan sesuai dengan data masukan yang berupa citra RGB dengan 3 kanal. Contoh perhitungan \textit{convolutional layer} menggunakan data masukan citra RGB kanker kulit berukuran $640\times 640$ dengan 32 \textit{filter} berukuran $3\times 3$ pada masing-masing kanal RGB seperti terlihat pada Gambar \ref{fig:d-convol}.
 
     \begin{figure}[H]
         \centering
             \includegraphics[width=10cm]{img/bab4/convolution.png}
-        \caption{Ilustrasi operasi konvolusi data masukan dengan filter yang menghasilkan \textit{feature map}}
+        \caption{Ilustrasi operasi konvolusi data masukan dengan \textit{filter} yang menghasilkan \textit{feature map}}
         \label{fig:d-convol}
     \end{figure}
 
-    Seperti terlihat pada Gambar \ref{fig:d-convol}, operasi konvolusi antara data masukan dengan filter yang sudah ditentukan oleh YOLOv7 akan menghasilkan \textit{feature map}. Ukuran dan dimensi dari \textit{feature map} dapat dihitung sesuai dengan perhitungan di bawah ini.
+    Seperti terlihat pada Gambar \ref{fig:d-convol}, operasi konvolusi antara data masukan dengan \textit{filter} yang sudah ditentukan oleh YOLOv7 akan menghasilkan \textit{feature map}. Pada \textit{convolution layer} pertama, YOLOv7 menggunakan ukuran \textit{filter} $3\times 3$ dengan $s=1$. Ukuran dan dimensi dari \textit{feature map} dapat dihitung sesuai dengan perhitungan di bawah ini.
 
     \begin{align*}
         w &= \frac{w - f + 2p}{s} + 1\\
-        &= \frac{640 - 3 + 2(1)}{2} + 1\\
-        &= 320
+        &= \frac{640 - 3 + 2(1)}{1} + 1\\
+        &= 640
     \end{align*}
 
-    Perhitungan di atas memperlihatkan bahwa ukuran \textit{feature map} dari operasi konvolusi data masukan berukuran $640\times 640\times 3$ dengan \textit{filter} berukuran $3\times 3\times 64$ dan $s=2$ serta $p=1$ adalah $320\times 320\times 64$. Ilustrasi perhitungan operasi konvolusi data masukan dengan \textit{filter} dapat dicontohkan seperti di bawah ini.
+    Perhitungan di atas memperlihatkan bahwa ukuran \textit{feature map} dari operasi konvolusi data masukan berukuran $640\times 640$ terhadap \textit{filter} berukuran $3\times 3$ dengan $s=1$ dan $p=1$ menghasilkan \textit{feature map} berukuran $640\times 640$ piksel. Pada arsitektur YOLOv7 seperti terlihat pada Gambar \ref{fig:yolov7-archi}, \textit{layer} pertama pada YOLOv7 menghasilkan 32 \textit{feature map} dengan ukuran $640\times 640$ piksel. Ilustrasi perhitungan operasi konvolusi data masukan dengan \textit{filter} pada \textit{layer} pertama di YOLOv7 dapat dicontohkan seperti di bawah ini.
 
     \begin{alignat*}{5}
-        R_{0, 0}        &=  &&\bigl( I_{r}(0, 0)\times F_{r}(0, 0) + I_{r}(0, 1)\times F_{r}(0, 1) + I_{r}(0, 2)\times F_{r}(0, 2) + \cdots + \\
-                        &   &&I_{r}(2, 2)\times F_{r}(2, 2) \bigr) + \bigl( I_{g}(0, 0)\times F_{g}(0, 0) + I_{g}(0, 1)\times F_{g}(0, 1) + \\
-                        &   &&I_{g}(0, 2)\times F_{g}(0, 2) + \cdots + I_{g}(2, 2)\times F_{g}(2, 2) \bigr) + \bigl( I_{b}(0, 0)\times F_{b}(0, 0) + \\
-                        &   &&I_{b}(0, 1)\times F_{b}(0, 1) + I_{b}(0, 2)\times F_{b}(0, 2) + \cdots + I_{b}(2, 2)\times F_{b}(2, 2) \bigr) \\
+        R_{(0, 0)}          &=  &&\bigl( I_{r}(0, 0)\times F_{r}(0, 0) + I_{r}(0, 1)\times F_{r}(0, 1) + I_{r}(0, 2)\times F_{r}(0, 2) + \cdots + \\
+                            &   &&I_{r}(2, 2)\times F_{r}(2, 2) \bigr) + \bigl( I_{g}(0, 0)\times F_{g}(0, 0) + I_{g}(0, 1)\times F_{g}(0, 1) + \\
+                            &   &&I_{g}(0, 2)\times F_{g}(0, 2) + \cdots + I_{g}(2, 2)\times F_{g}(2, 2) \bigr) + \bigl( I_{b}(0, 0)\times F_{b}(0, 0) + \\
+                            &   &&I_{b}(0, 1)\times F_{b}(0, 1) + I_{b}(0, 2)\times F_{b}(0, 2) + \cdots + I_{b}(2, 2)\times F_{b}(2, 2) \bigr) \\
         % === Batas rumus
-                        &=  &&\bigl( (0.925490\times 0.19116) + (0.925490\times 0.17358) + (0.925490\times \\
-                        &   &&0.17896) + \cdots + (0.913725\times 0.13184) \bigr) + \bigl( (0.776471\times 0.19116) + \\
-                        &   &&(0.776471\times 0.17358) + (0.776471\times 0.17896) + \cdots + (0.764706\times \\
-                        &   &&0.13184) \bigr) + \bigl( (0.937255\times 0.19116) + (0.937255\times 0.17358) + \\
-                        &   &&(0.937255\times 0.17896) + \cdots + (0.925490\times 0.13184) \bigr) \\
-                        &=  &&0.404922 \\
+                            &=  &&\bigl( (0.925490\times 0.19116) + (0.925490\times 0.17358) + (0.925490\times \\
+                            &   &&0.17896) + \cdots + (0.913725\times 0.13184) \bigr) + \bigl( (0.776471\times 0.19116) + \\
+                            &   &&(0.776471\times 0.17358) + (0.776471\times 0.17896) + \cdots + (0.764706\times \\
+                            &   &&0.13184) \bigr) + \bigl( (0.937255\times 0.19116) + (0.937255\times 0.17358) + \\
+                            &   &&(0.937255\times 0.17896) + \cdots + (0.925490\times 0.13184) \bigr) \\
+                            &=  &&0.404922 \\
         \vdots \\
-        R_{319, 319}    &=  &&\bigl( I_{r}(638, 638)\times F_{r}(638, 638) + I_{r}(638, 639)\times F_{r}(638, 639) + \\
-                        &   &&I_{r}(638, 640)\times F_{r}(638, 640) + \cdots + I_{r}(640, 640)\times F_{r}(640, 640) \bigr) + \\
-                        &   &&\bigl( I_{g}(638, 638)\times F_{g}(638, 638) + I_{g}(638, 639)\times F_{g}(638, 639) + \\
-                        &   &&I_{g}(638, 640)\times F_{g}(638, 640) + \cdots + I_{g}(640, 640)\times F_{g}(640, 640) \bigr) + \\
-                        &   &&\bigl( I_{b}(638, 638)\times F_{b}(638, 638) + I_{b}(638, 639)\times F_{b}(638, 639) + \\
-                        &   &&I_{b}(638, 640)\times F_{b}(638, 640) + \cdots + I_{b}(640, 640)\times F_{b}(640, 640) \bigr) \\
+        R_{(639, 639)}      &=  &&\bigl( I_{r}(638, 638)\times F_{r}(638, 638) + I_{r}(638, 639)\times F_{r}(638, 639) + \\
+                            &   &&I_{r}(638, 640)\times F_{r}(638, 640) + \cdots + I_{r}(640, 640)\times F_{r}(640, 640) \bigr) + \\
+                            &   &&\bigl( I_{g}(638, 638)\times F_{g}(638, 638) + I_{g}(638, 639)\times F_{g}(638, 639) + \\
+                            &   &&I_{g}(638, 640)\times F_{g}(638, 640) + \cdots + I_{g}(640, 640)\times F_{g}(640, 640) \bigr) + \\
+                            &   &&\bigl( I_{b}(638, 638)\times F_{b}(638, 638) + I_{b}(638, 639)\times F_{b}(638, 639) + \\
+                            &   &&I_{b}(638, 640)\times F_{b}(638, 640) + \cdots + I_{b}(640, 640)\times F_{b}(640, 640) \bigr) \\
         % === Batas Rumus
-                        &=  &&\bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + (0.937255\times \\
-                        &   &&0.17896) + \cdots + (0.949020\times 0.13184) \bigr) + \bigl( (0.760784\times 0.19116) + \\
-                        &   &&(0.764706\times 0.17358) + (0.756863\times 0.17896) + \cdots + (0.768627\times \\
-                        &   &&0.13184) \bigr) + \bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + \\
-                        &   &&(0.937255\times 0.17896) + \cdots + (0.949020\times 0.13184) \bigr) \\
-                        &=  &&0.258519 \\
+                            &=  &&\bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + (0.937255\times \\
+                            &   &&0.17896) + \cdots + (0.949020\times 0.13184) \bigr) + \bigl( (0.760784\times 0.19116) + \\
+                            &   &&(0.764706\times 0.17358) + (0.756863\times 0.17896) + \cdots + (0.768627\times \\
+                            &   &&0.13184) \bigr) + \bigl( (0.941176\times 0.19116) + (0.945098\times 0.17358) + \\
+                            &   &&(0.937255\times 0.17896) + \cdots + (0.949020\times 0.13184) \bigr) \\
+                            &=  &&0.258519 \\
     \end{alignat*}
 
-    Perhitungan di atas akan menghasilkan \textit{feature map} hasil dari operasi data masukan dengan \textit{filter} sebagaimana matriks di bawah ini. Perhitungan tersebut sesuai dengan nilai $k$ pada \textit{filter} karena jumlah \textit{feature map} yang dihasilkan bergantung pada jumlah \textit{filter} yang dipakai atau sama dengan $d=k$ dimana $d$ adalah dimensi \textit{feature map} dan $k$ adalah jumlah \textit{filter}.
+    Perhitungan di atas akan menghasilkan \textit{feature map} hasil dari operasi data masukan dengan \textit{filter} sebagaimana matriks di bawah ini. Matriks di bawah adalah salah satu dari 32 \textit{feature map} dengan ukuran $640\times 640$ yang dihasilkan dari operasi konvolusi pada perhitungan di atas.
 
     \begin{align*}
         R_{(:, :, 0)} = 
@@ -157,10 +157,10 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             0.350666 & 0.311744 & 0.311837 & 0.311837 & \cdots & 0.337295 \\
             \vdots   & \vdots   & \vdots   & \vdots   & \ddots &\vdots \\
             0.265303 & 0.246458 & 0.250151 & 0.255221 & \cdots & 0.258519 \\
-        \end{pmatrix}_{320\times 320}
+        \end{pmatrix}_{640\times 640}
     \end{align*}
 
-    \textit{Feature map} di atas adalah \textit{feature map} dengan indeks 0 atau \textit{feature map} pertama dari 64 \textit{feature map} yang dihasilkan pada \textit{convolutional layer} di YOLOv7. \textit{Feature map} di atas berukuran $320\times 320$ dan jika beberapa hasil \textit{feature map} divisualisasikan akan terlihat seperti Gambar \ref{fig:d-feamap}.
+    Visualisasi 32 \textit{feature map} hasil dari operasi konvolusi pada perhitungan di atas seperti terlihat pada Gambar \ref{fig:d-feamap}.
 
     \begin{figure}[H]
         \begin{center}
@@ -179,7 +179,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
                              &= 1.0021 \left( \frac{0.404922 - (-0.002345)}{\sqrt{29.41072 - 0.001}} \right) + 1.624\\
                              &= -0.589056\\
         \vdots\\
-        \breve{Z}_{319, 319} &= \gamma \left( \frac{Z_{i} - \mu}{\sqrt{\sigma^2 - \epsilon}} \right) + \beta \\
+        \breve{Z}_{639, 639} &= \gamma \left( \frac{Z_{i} - \mu}{\sqrt{\sigma^2 - \epsilon}} \right) + \beta \\
                              &= 1.0021 \left( \frac{0.258519 - (-0.002345)}{\sqrt{29.41072 - 0.001}} \right) + 1.624\\
                              &= -5.816965\\
     \end{align*}
@@ -196,7 +196,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -2.526499 & -3.916370 & -3.913023 & -3.913023 & \cdots & -3.003972 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -5.574710 & -6.247649 & -6.115799 & -5.934733 & \cdots & -5.816965 \\
-        \end{pmatrix}_{320\times 320}
+        \end{pmatrix}_{640\times 640}
     \end{align*}
 
     Nilai pada \textit{feature map} hasil normalisasi memiliki interval yang tidak terlalu jauh seperti terlihat pada matriks di atas. Visualisasi \textit{feature map} yang telah melewati \textit{batch normalization layer} seperti terlihat pada Gambar \ref{fig:d-banorm}.
@@ -219,7 +219,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
                             &= max(0.1\times (-0.589056), -0.589056) \\
                             &= -0.005891 \\
         \vdots \\
-        f(x)_{(319, 319)}   &= max(0.1\times x, x) \\
+        f(x)_{(639, 639)}   &= max(0.1\times x, x) \\
                             &= max(0.1\times (-5.816965), -5.816965) \\
                             &= max(0.1\times (-5.816965), -5.816965) \\
                             &= -0.058170 \\
@@ -237,10 +237,10 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -0.025265 & -0.039164 & -0.039130 & -0.039130 & \cdots & -0.030040 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -0.055747 & -0.062476 & -0.061158 & -0.059347 & \cdots & -0.058170 \\
-        \end{pmatrix}_{320\times 320}
+        \end{pmatrix}_{640\times 640}
     \end{align*}
 
-    Perhitungan fungsi aktivasi Leaky ReLU terjadi hingga pada lapisan terakhir. Visualisasi \textit{feature map} yang telah melewati fungsi aktivasi Leaky ReLU seperti terlihat pada Gambar \ref{fig:d-lrelu}.
+    Perhitungan fungsi aktivasi Leaky ReLU terjadi hingga pada \textit{feature map} terakhir. Visualisasi \textit{feature map} yang telah melewati fungsi aktivasi Leaky ReLU seperti terlihat pada Gambar \ref{fig:d-lrelu}.
 
     \begin{figure}[H]
         \begin{center}
@@ -251,7 +251,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     \end{figure}
 
     \subsection{\textit{Sigmoid-weighted Linear Unit} (SiLU)}
-    Peningkatan yang paling utama dari YOLOv7 adalah fungsi aktivasi SiLU. Hal ini juga meningkatkan waktu komputasi karena fungsi aktivasi SiLU memiliki persamaan yang lebih kompleks daripada fungsi aktivasi Leaky ReLU. Dapat dilihat pada Gambar \ref{fig:silu} bahwa grafik terlihat menaik dengan tidak konstan. Meskipun hal ini meningkatkan waktu komputasi, namun SiLU dapat menstabilkan dirinya sendiri. Perhitungan fungsi aktivasi SiLU menggunakan Persamaan \ref{eq:silu} seperti terlihat di bawah ini.
+    Peningkatan yang paling utama dari YOLOv7 adalah fungsi aktivasi SiLU. Hal ini juga meningkatkan waktu komputasi karena fungsi aktivasi SiLU memiliki persamaan yang lebih kompleks daripada fungsi aktivasi Leaky ReLU. Dapat dilihat pada Gambar \ref{fig:silu} bahwa grafik terlihat menaik dengan tidak konstan. Meskipun hal ini meningkatkan waktu komputasi, namun SiLU dapat meningkatkan akurasi pada YOLOv7. Perhitungan fungsi aktivasi SiLU menggunakan Persamaan \ref{eq:silu} seperti terlihat di bawah ini.
 
     \begin{align*}
         a_k(z_k)_{(0, 0)}       &= z_k\frac{1}{1+e^{-(z_k)}} \\

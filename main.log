@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.27)  12 JAN 2023 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.27)  12 JAN 2023 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1476,36 +1476,40 @@ File: img/bab4/annotation.png Graphic file (type png)
 <use img/bab4/annotation.png>
 Package pdftex.def Info: img/bab4/annotation.png  used on input line 50.
 (pdftex.def)             Requested size: 142.26378pt x 137.51569pt.
- [51 <./img/bab4/resize-1024.png> <./img/bab4/resize-640.png> <./img/bab4/annotation.png>] [52] [53]
-<img/bab4/convolution.png, id=1334, 2409.0pt x 850.17625pt>
+ [51 <./img/bab4/resize-1024.png> <./img/bab4/resize-640.png> <./img/bab4/annotation.png>] [52] [53] [54]
+<img/bab4/convolution.png, id=1338, 2409.0pt x 850.17625pt>
 File: img/bab4/convolution.png Graphic file (type png)
 <use img/bab4/convolution.png>
 Package pdftex.def Info: img/bab4/convolution.png  used on input line 105.
 (pdftex.def)             Requested size: 284.52756pt x 100.40814pt.
- [54] [55 <./img/bab4/convolution.png>] [56]
-<img/bab4/conv-layer.png, id=1351, 578.16pt x 289.08pt>
+ [55 <./img/bab4/convolution.png>]
+Overfull \hbox (2.4852pt too wide) detected at line 146
+[]
+ []
+
+[56]
+<img/bab4/conv-layer.png, id=1352, 578.16pt x 289.08pt>
 File: img/bab4/conv-layer.png Graphic file (type png)
 <use img/bab4/conv-layer.png>
 Package pdftex.def Info: img/bab4/conv-layer.png  used on input line 167.
 (pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
- [57 <./img/bab4/conv-layer.png>]
+ [57] [58 <./img/bab4/conv-layer.png>]
 Overfull \hbox (33.43668pt too wide) detected at line 200
 []
  []
 
-[58]
-<img/bab4/bn-layer.png, id=1363, 578.16pt x 289.08pt>
+<img/bab4/bn-layer.png, id=1364, 578.16pt x 289.08pt>
 File: img/bab4/bn-layer.png Graphic file (type png)
 <use img/bab4/bn-layer.png>
 Package pdftex.def Info: img/bab4/bn-layer.png  used on input line 206.
 (pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
- [59 <./img/bab4/bn-layer.png>]
+[59 <./img/bab4/bn-layer.png>]
 Overfull \hbox (33.43668pt too wide) detected at line 241
 []
  []
 
 [60]
-<img/bab4/lrelu-layer.png, id=1377, 578.16pt x 289.08pt>
+<img/bab4/lrelu-layer.png, id=1378, 578.16pt x 289.08pt>
 File: img/bab4/lrelu-layer.png Graphic file (type png)
 <use img/bab4/lrelu-layer.png>
 Package pdftex.def Info: img/bab4/lrelu-layer.png  used on input line 247.
@@ -1516,7 +1520,7 @@ Overfull \hbox (33.43668pt too wide) detected at line 279
  []
 
 [62]
-<img/bab4/silu-layer.png, id=1391, 578.16pt x 289.08pt>
+<img/bab4/silu-layer.png, id=1392, 578.16pt x 289.08pt>
 File: img/bab4/silu-layer.png Graphic file (type png)
 <use img/bab4/silu-layer.png>
 Package pdftex.def Info: img/bab4/silu-layer.png  used on input line 285.
@@ -1527,7 +1531,7 @@ Overfull \hbox (20.6865pt too wide) detected at line 316
  []
 
 [64]
-<img/bab4/mp-layer.png, id=1402, 578.16pt x 578.16pt>
+<img/bab4/mp-layer.png, id=1403, 578.16pt x 578.16pt>
 File: img/bab4/mp-layer.png Graphic file (type png)
 <use img/bab4/mp-layer.png>
 Package pdftex.def Info: img/bab4/mp-layer.png  used on input line 322.
@@ -1537,43 +1541,43 @@ Overfull \hbox (13.10306pt too wide) detected at line 343
 []
  []
 
-<img/bab4/up-layer.png, id=1414, 484.9317pt x 311.84505pt>
+<img/bab4/up-layer.png, id=1415, 484.9317pt x 311.84505pt>
 File: img/bab4/up-layer.png Graphic file (type png)
 <use img/bab4/up-layer.png>
 Package pdftex.def Info: img/bab4/up-layer.png  used on input line 349.
 (pdftex.def)             Requested size: 341.43306pt x 219.57478pt.
 [67 <./img/bab4/up-layer.png>]
-<img/bab4/elan-layer.png, id=1422, 578.16pt x 578.16pt>
+<img/bab4/elan-layer.png, id=1423, 578.16pt x 578.16pt>
 File: img/bab4/elan-layer.png Graphic file (type png)
 <use img/bab4/elan-layer.png>
 Package pdftex.def Info: img/bab4/elan-layer.png  used on input line 361.
 (pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
  [68] [69 <./img/bab4/elan-layer.png>] [70] [71] [72] [73]
-<img/bab4/confmat-yolov7.png, id=1456, 614.295pt x 600.2425pt>
+<img/bab4/confmat-yolov7.png, id=1457, 614.295pt x 600.2425pt>
 File: img/bab4/confmat-yolov7.png Graphic file (type png)
 <use img/bab4/confmat-yolov7.png>
 Package pdftex.def Info: img/bab4/confmat-yolov7.png  used on input line 432.
 (pdftex.def)             Requested size: 341.43306pt x 333.62395pt.
  [74 <./img/bab4/confmat-yolov7.png>]
-<img/bab4/pr-yolov7.png, id=1469, 721.69624pt x 371.3875pt>
+<img/bab4/pr-yolov7.png, id=1470, 721.69624pt x 371.3875pt>
 File: img/bab4/pr-yolov7.png Graphic file (type png)
 <use img/bab4/pr-yolov7.png>
 Package pdftex.def Info: img/bab4/pr-yolov7.png  used on input line 456.
 (pdftex.def)             Requested size: 341.43306pt x 175.70251pt.
  [75] [76 <./img/bab4/pr-yolov7.png>]
-<img/bab4/confmat-yolov7tiny.png, id=1483, 614.295pt x 600.2425pt>
+<img/bab4/confmat-yolov7tiny.png, id=1484, 614.295pt x 600.2425pt>
 File: img/bab4/confmat-yolov7tiny.png Graphic file (type png)
 <use img/bab4/confmat-yolov7tiny.png>
 Package pdftex.def Info: img/bab4/confmat-yolov7tiny.png  used on input line 468.
 (pdftex.def)             Requested size: 341.43306pt x 333.62395pt.
  [77 <./img/bab4/confmat-yolov7tiny.png>]
-<img/bab4/pr-yolov7tiny.png, id=1491, 721.69624pt x 371.3875pt>
+<img/bab4/pr-yolov7tiny.png, id=1493, 721.69624pt x 371.3875pt>
 File: img/bab4/pr-yolov7tiny.png Graphic file (type png)
 <use img/bab4/pr-yolov7tiny.png>
 Package pdftex.def Info: img/bab4/pr-yolov7tiny.png  used on input line 490.
 (pdftex.def)             Requested size: 341.43306pt x 175.70251pt.
  [78 <./img/bab4/pr-yolov7tiny.png>]
-<img/bab4/map.png, id=1502, 701.62125pt x 371.3875pt>
+<img/bab4/map.png, id=1503, 701.62125pt x 371.3875pt>
 File: img/bab4/map.png Graphic file (type png)
 <use img/bab4/map.png>
 Package pdftex.def Info: img/bab4/map.png  used on input line 516.
@@ -1824,16 +1828,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  34496 strings out of 475075
  638856 string characters out of 5783001
- 1091518 words of memory out of 5000000
+ 1093581 words of memory out of 5000000
  54823 multiletter control sequences out of 15000+600000
  491985 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,103p,3123b,3667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/arabtex/xnsh14.pfb>
-Output written on main.pdf (113 pages, 30763587 bytes).
+Output written on main.pdf (113 pages, 30763092 bytes).
 PDF statistics:
- 1731 PDF objects out of 2073 (max. 8388607)
- 1472 compressed objects within 15 object streams
+ 1732 PDF objects out of 2073 (max. 8388607)
+ 1473 compressed objects within 15 object streams
  370 named destinations out of 1000 (max. 500000)
  903 words of extra memory for PDF output out of 10000 (max. 10000000)
 
