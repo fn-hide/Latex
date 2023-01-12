@@ -1,71 +1,60 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike2.bst
 Database file #1: Skripsi.bib
+Warning--entry type for "Jocher2020" isn't style-file defined
+--line 403 of file Skripsi.bib
 Reallocated buffer (elt_size=1) to 40000 items from 20000.
 Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
 Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
 Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
-Warning--empty journal in Baranwal2021
-Warning--empty publisher in Blackledge2005
-Warning--empty journal in Bochkovskiy2020
-Warning--empty journal in Combalia2019
-Warning--empty journal in Fang2021b
-Warning--there's a number but no volume in Fang2021b
+Warning--I didn't find a database entry for "Xu2015"
 Warning--empty journal in Ge2021
-Warning--empty journal in Li2022
-Warning--empty journal in Long2020
-Warning--empty journal in OShea2015
-Warning--empty journal in Redmon2018
 Warning--empty journal in Saherish2020a
-Warning--empty publisher in Shultz2017
 Warning--there's a number but no volume in Umamaheswari2018
-Warning--empty journal in Wanga
-Warning--empty journal in Wang2022
-Warning--empty journal in Xu2015
 Warning--empty journal in Zou2019
-You've used 73 entries,
+You've used 72 entries,
             2229 wiz_defined-function locations,
-            938 strings with 18973 characters,
-and the built_in function-call counts, 31554 in all, are:
-= -- 3013
-> -- 1662
-< -- 39
-+ -- 582
-- -- 579
-* -- 2826
-:= -- 5561
-add.period$ -- 209
-call.type$ -- 73
-change.case$ -- 651
-chr.to.int$ -- 70
-cite$ -- 91
-duplicate$ -- 1087
-empty$ -- 1930
-format.name$ -- 686
-if$ -- 6020
+            950 strings with 19370 characters,
+and the built_in function-call counts, 31649 in all, are:
+= -- 3041
+> -- 1669
+< -- 38
++ -- 588
+- -- 583
+* -- 2821
+:= -- 5568
+add.period$ -- 213
+call.type$ -- 72
+change.case$ -- 648
+chr.to.int$ -- 69
+cite$ -- 76
+duplicate$ -- 1086
+empty$ -- 1934
+format.name$ -- 687
+if$ -- 6063
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 72
-newline$ -- 358
-num.names$ -- 221
-pop$ -- 584
+missing$ -- 71
+newline$ -- 360
+num.names$ -- 218
+pop$ -- 557
 preamble$ -- 1
-purify$ -- 653
+purify$ -- 650
 quote$ -- 0
-skip$ -- 862
+skip$ -- 866
 stack$ -- 0
-substring$ -- 1945
-swap$ -- 148
+substring$ -- 1985
+swap$ -- 166
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 434
-warning$ -- 18
-while$ -- 255
+type$ -- 428
+warning$ -- 4
+while$ -- 253
 width$ -- 0
-write$ -- 906
-(There were 18 warnings)
+write$ -- 916
+(There were 6 warnings)

@@ -23,7 +23,7 @@ Azevedo, T., de~Jong, R., Mattina, M., \& Maji, P. (2020).
 Baranwal, N., Doravari, P., \& Kachhoria, R. (2021).
 \newblock {Classification of Histopathology Images of Lung Cancer Using
   Convolutional Neural Network (CNN)}.
-\newblock 2, 1--25.
+\newblock {\em arXiv preprint arXiv:2112.13553}, 2, 1--25.
 
 \bibitem[Benjumea et~al., 2021]{Benjumea}
 Benjumea, A., Teeti, I., Cuzzolin, F., \& Bradley, A. (2021).
@@ -41,11 +41,12 @@ Bhimavarapu, U. \& Battineni, G. (2022).
 Blackledge, J.~M. (2005).
 \newblock {\em {Digital Image Processing: Mathematical and Computational
   Methods}}.
-\newblock Chichester.
+\newblock Chichester: Elsevier.
 
 \bibitem[Bochkovskiy et~al., 2020]{Bochkovskiy2020}
 Bochkovskiy, A., Wang, C.-Y., \& Liao, H.-Y.~M. (2020).
-\newblock {YOLOv4: Optimal Speed and Accuracy of Object Detection}.
+\newblock Yolov4: Optimal speed and accuracy of object detection.
+\newblock {\em arXiv preprint arXiv:2004.10934}.
 
 \bibitem[Celebi et~al., 2019]{Celebi2019}
 Celebi, M.~E., Codella, N., \& Halpern, A. (2019).
@@ -74,7 +75,7 @@ Combalia, M., Codella, N. C.~F., Rotemberg, V., Helba, B., Vilaplana, V.,
   Reiter, O., Carrera, C., Barreiro, A., Halpern, A.~C., Puig, S., \& Malvehy,
   J. (2019).
 \newblock {BCN20000: Dermoscopic Lesions in the Wild}.
-\newblock (pp.\ 3--5).
+\newblock {\em arXiv preprint arXiv:1908.02288}, (pp.\ 3--5).
 
 \bibitem[Cowton et~al., 2019]{Cowton2019}
 Cowton, J., Kyriazakis, I., \& Bacardit, J. (2019).
@@ -99,10 +100,13 @@ Elfwing, S., Uchibe, E., \& Doya, K. (2018).
   approximation in reinforcement learning}.
 \newblock {\em Neural Networks}, 107(2015), 3--11.
 
-\bibitem[Fang \& Liao, 2021]{Fang2021b}
-Fang, Y. \& Liao, B. (2021).
-\newblock {You Only Look at One Sequence :}.
-\newblock (NeurIPS), 1--18.
+\bibitem[Fang et~al., 2021]{Fang2021b}
+Fang, Y., Liao, B., Wang, X., Fang, J., Qi, J., Wu, R., Niu, J., \& Liu, W.
+  (2021).
+\newblock You only look at one sequence: Rethinking transformer in vision
+  through object detection.
+\newblock {\em Advances in Neural Information Processing Systems}, 34,
+  26183--26197.
 
 \bibitem[Fu'adah et~al., 2020]{Fuadah2020a}
 Fu'adah, Y.~N., Pratiwi, N.~C., Pramudito, M.~A., \& Ibrahim, N. (2020).
@@ -152,7 +156,7 @@ Janda, M., Olsen, C.~M., Mar, V.~J., \& Cust, A.~E. (2022).
 
 \bibitem[Jocher, 2020]{Jocher2020}
 Jocher, G. (2020).
-\newblock {ultralytics/yolov5: YOLOv5 ? in PyTorch > ONNX > CoreML > TFLite}.
+\newblock {YOLOv5 by Ultralytics}.
 
 \bibitem[Julianto et~al., 2021]{julianto2021performance}
 Julianto, I.~T., Rohmanto, R., Sarifudin, U., \& Widianto, S.~R. (2021).
@@ -172,6 +176,7 @@ Li, C., Li, L., Jiang, H., Weng, K., Geng, Y., Li, L., Ke, Z., Li, Q., Cheng,
   X., \& Wei, X. (2022a).
 \newblock {YOLOv6: A Single-Stage Object Detection Framework for Industrial
   Applications}.
+\newblock {\em arXiv preprint arXiv:2209.02976}.
 
 \bibitem[Li et~al., 2022b]{li2022epidemiology}
 Li, Y., Lin, B., Liang, S., Tao, J., Zhang, L., Wang, J., \& Zheng, J. (2022b).
@@ -181,8 +186,8 @@ Li, Y., Lin, B., Liang, S., Tao, J., Zhang, L., Wang, J., \& Zheng, J. (2022b).
 
 \bibitem[Liu et~al., 2020]{liu2020wqt}
 Liu, H., Song, P., \& Ding, R. (2020).
-\newblock {WQT and DG-YOLO: Towards domain generalization in underwater object
-  detection}.
+\newblock {WQT and DG-YOLO: Towards Domain Generalization in Underwater Object
+  Detection}.
 \newblock {\em arXiv preprint arXiv:2004.06333}.
 
 \bibitem[Long et~al., 2020]{Long2020}
@@ -190,6 +195,7 @@ Long, X., Deng, K., Wang, G., Zhang, Y., Dang, Q., Gao, Y., Shen, H., Ren, J.,
   Han, S., Ding, E., \& Wen, S. (2020).
 \newblock {PP-YOLO: An Effective and Efficient Implementation of Object
   Detector}.
+\newblock {\em arXiv preprint arXiv:2007.12099}.
 
 \bibitem[Ma \& Karki, 2020]{Ma2020}
 Ma, V. \& Karki, M.~V. (2020).
@@ -249,8 +255,8 @@ Nurlitasari, D.~A., Fuadah, R. Y.~N., \& Magdalena, R. (2022).
 
 \bibitem[O'Shea \& Nash, 2015]{OShea2015}
 O'Shea, K. \& Nash, R. (2015).
-\newblock {An Introduction to Convolutional Neural Networks}.
-\newblock (pp.\ 1--11).
+\newblock An introduction to convolutional neural networks.
+\newblock {\em CoRR}, abs/1511.08458.
 
 \bibitem[Park et~al., 2022]{Park2022}
 Park, M.~Y., Kim, Y., Ha, S.~E., Kim, H.~H., Bhosale, P.~B., Abusaliya, A.,
@@ -295,7 +301,8 @@ Redmon, J. \& Farhadi, A. (2017).
 
 \bibitem[Redmon \& Farhadi, 2018]{Redmon2018}
 Redmon, J. \& Farhadi, A. (2018).
-\newblock {YOLOv3: An Incremental Improvement}.
+\newblock Yolov3: An incremental improvement.
+\newblock {\em CoRR}, abs/1804.02767.
 
 \bibitem[Rudianto, 2015]{Katsir2015}
 Rudianto (2015).
@@ -334,6 +341,7 @@ Shedden-Mora, M.~C., Pan, Y., Heisig, S.~R., von Blanckenburg, P., Rief, W.,
 \bibitem[Shultz \& Fahlman, 2017]{Shultz2017}
 Shultz, T.~R. \& Fahlman, S.~E. (2017).
 \newblock {\em {Encyclopedia of Machine Learning and Data Mining}}.
+\newblock Springer Science \& Business Media.
 
 \bibitem[Strobel et~al., 2019]{Strobel2019}
 Strobel, O., Neoptolemos, J., J{\"{a}}ger, D., \& B{\"{u}}chler, M.~W. (2019).
@@ -371,13 +379,15 @@ Waks, A.~G. \& Winer, E.~P. (2019).
 
 \bibitem[Wang et~al., 2021a]{Wanga}
 Wang, C.-Y., Bochkovskiy, A., \& Liao, H.-Y.~M. (2021a).
-\newblock {Scaled-YOLOv4: Scaling Cross Stage Partial Network}.
+\newblock Scaled-yolov4: Scaling cross stage partial network.
+\newblock In {\em Proceedings of the IEEE/cvf conference on computer vision and
+  pattern recognition}  (pp.\ 13029--13038).
 
 \bibitem[Wang et~al., 2022]{Wang2022}
 Wang, C.-Y., Bochkovskiy, A., \& Liao, H.-Y.~M. (2022).
 \newblock {YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for
   real-time object detectors}.
-\newblock (pp.\ 1--15).
+\newblock {\em arXiv preprint arXiv:2207.02696}, (pp.\ 1--15).
 
 \bibitem[Wang et~al., 2021b]{Wang}
 Wang, C.-Y., Yeh, I.-H., \& Liao, H.-Y.~M. (2021b).
@@ -403,11 +413,6 @@ Wu, Y., Su, L., Yuan, M., Chen, T., Ye, J., Jiang, Y., Song, J., \& Yang, H.
   Synergistic Gas Radiotherapy}.
 \newblock {\em Angewandte Chemie}, 133(23), 12978--12985.
 
-\bibitem[Xu et~al., 2015]{Xu2015}
-Xu, B., Wang, N., Chen, T., \& Li, M. (2015).
-\newblock {Empirical Evaluation of Rectified Activations in Convolutional
-  Network}.
-
 \bibitem[Xu et~al., 2022]{xu2022pp}
 Xu, S., Wang, X., Lv, W., Chang, Q., Cui, C., Deng, K., Wang, G., Dang, Q.,
   Wei, S., Du, Y., \& Others (2022).
@@ -422,8 +427,8 @@ Yani, M., Irawan, B., \& Setiningsih, C. (2019).
 
 \bibitem[Zhang et~al., 2021]{zhang2021csl}
 Zhang, Y.-M., Lee, C.-C., Hsieh, J.-W., \& Fan, K.-C. (2021).
-\newblock {CSL-YOLO: A new lightweight object detection system for edge
-  computing}.
+\newblock {CSL-YOLO: A New Lightweight Object Detection System for Edge
+  Computing}.
 \newblock {\em arXiv preprint arXiv:2107.04829}.
 
 \bibitem[Zou et~al., 2019]{Zou2019}
