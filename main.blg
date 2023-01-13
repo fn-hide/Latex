@@ -1,60 +1,59 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike2.bst
 Database file #1: Skripsi.bib
 Warning--entry type for "Jocher2020" isn't style-file defined
---line 437 of file Skripsi.bib
+--line 449 of file Skripsi.bib
 Reallocated buffer (elt_size=1) to 40000 items from 20000.
 Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
 Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
 Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
-Warning--I didn't find a database entry for "Xu2015"
 Warning--empty journal in Ge2021
 Warning--empty journal in Saherish2020a
 Warning--there's a number but no volume in Umamaheswari2018
 Warning--empty journal in Zou2019
-You've used 74 entries,
+You've used 75 entries,
             2229 wiz_defined-function locations,
-            962 strings with 19814 characters,
-and the built_in function-call counts, 32705 in all, are:
-= -- 3141
-> -- 1725
+            964 strings with 19971 characters,
+and the built_in function-call counts, 33072 in all, are:
+= -- 3174
+> -- 1748
 < -- 39
-+ -- 611
-- -- 603
-* -- 2913
-:= -- 5741
-add.period$ -- 219
-call.type$ -- 74
-change.case$ -- 668
-chr.to.int$ -- 70
-cite$ -- 78
-duplicate$ -- 1127
-empty$ -- 2002
-format.name$ -- 709
-if$ -- 6275
++ -- 619
+- -- 611
+* -- 2944
+:= -- 5811
+add.period$ -- 222
+call.type$ -- 75
+change.case$ -- 677
+chr.to.int$ -- 71
+cite$ -- 79
+duplicate$ -- 1140
+empty$ -- 2022
+format.name$ -- 718
+if$ -- 6342
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 73
-newline$ -- 370
-num.names$ -- 224
-pop$ -- 579
+missing$ -- 74
+newline$ -- 375
+num.names$ -- 227
+pop$ -- 588
 preamble$ -- 1
-purify$ -- 670
+purify$ -- 679
 quote$ -- 0
-skip$ -- 897
+skip$ -- 907
 stack$ -- 0
-substring$ -- 2052
-swap$ -- 177
+substring$ -- 2064
+swap$ -- 178
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 440
+type$ -- 446
 warning$ -- 4
-while$ -- 261
+while$ -- 263
 width$ -- 0
-write$ -- 942
-(There were 6 warnings)
+write$ -- 954
+(There were 5 warnings)

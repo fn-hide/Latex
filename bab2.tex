@@ -223,7 +223,7 @@ Berdasarkan kemampuan CNN yang dapat mengolah data citra, neuron pada CNN terdir
 \end{figure}
 
     \subsection{\textit{Convolutional Layer}}
-    \textit{Convolutional Layer} merupakan layer utama dari CNN karena pada layer ini citra diolah dan dipelajari oleh CNN. \textit{Convolutional layer} menerapkan operasi konvolusi dengan tujuan mendapatkan fitur-fitur yang ada pada citra, seperti \textit{edge}, \textit{color}, \textit{shape}, dan fitur lainnya. Operasi konvolusi terjadi antara matriks dari data masukan, yaitu citra dan matriks filter. Kernel mengubah nilai pada citra masukan sesuai dengan nilai pada filter. Kernel memproses citra masukan dengan cara bergeser sebanyak \textit{stride} yang ditentukan. Hasil keluaran dari \textit{convolutional layer} berupa \textit{feature map} yang didapatkan dari sebuah citra masukan. Perhitungan untuk mendapatkan \textit{feature map} seperti terlihat pada Persamaan \ref{eq:conv-layer} dimana $z$ merupakan keluaran dari layer $l$, $h$ merupakan citra masukan, $W$ merupakan filter, dan $b$ merupakan bias. Gambar \ref{fig:conv} menunjukkan representasi dari \textit{convolutional layer} \citep{OShea2015}.
+    \textit{Convolutional Layer} merupakan layer utama dari CNN karena pada layer ini citra diolah dan dipelajari oleh CNN. \textit{Convolutional layer} menerapkan operasi konvolusi dengan tujuan mendapatkan fitur-fitur yang ada pada citra, seperti \textit{edge}, \textit{color}, \textit{shape}, dan fitur lainnya. Operasi konvolusi terjadi antara matriks dari data masukan, yaitu citra dan matriks \textit{filter}. \textit{Filter} mengubah nilai pada citra masukan sesuai dengan nilai pada \textit{filter}. \textit{Filter} memproses citra masukan dengan cara bergeser sebanyak \textit{stride} yang ditentukan. Hasil keluaran dari \textit{convolutional layer} berupa \textit{feature map} yang didapatkan dari sebuah citra masukan. Perhitungan untuk mendapatkan \textit{feature map} seperti terlihat pada Persamaan \ref{eq:conv-layer} dimana $z$ merupakan keluaran dari layer $l$, $h$ merupakan citra masukan, $W$ merupakan \textit{filter}, dan $b$ merupakan bias. Gambar \ref{fig:conv} menunjukkan representasi dari \textit{convolutional layer} \citep{OShea2015}.
 
     \begin{align}
         \label{eq:conv-layer}
@@ -233,13 +233,13 @@ Berdasarkan kemampuan CNN yang dapat mengolah data citra, neuron pada CNN terdir
     \begin{figure}[H]
         \begin{center}
             \includegraphics[width=12cm]{img/bab2/convlayer.PNG}
-            \caption{Cara kerja filter pada \textit{convolutional layer}}
+            \caption{Cara kerja \textit{filter} pada \textit{convolutional layer}}
             \label{fig:conv}
             Sumber: \citep{OShea2015}
         \end{center}
     \end{figure}
 
-    Pada YOLOv7, setiap operasi konvolusi selalu diikuti dengan \textit{batch normalization} dan fungsi aktivasi \textit{Sigmoid-weighted Linear Unit} sehingga dinamakan CBS (\textit{Convolution}, \textit{Batch normalization}, \textit{Sigmoid-weighted linear unit}) pada arsitektur YOLOv7. YOLOv7 menggunakan 3 jenis operasi konvolusi, yaitu operasi konvolusi dengan $f=1\times 1$ dan $s=1$, operasi konvolusi dengan $f=3\times 3$ dan $s=1$, dan operasi konvolusi dengan $f=3\times 3$ dan $s=2$. Operasi konvolusi dengan $f=1\times 1$ dan $s=1$ bertujuan untuk mengurangi dimensi \textit{feature map}. Operasi konvolusi dengan $f=3\times 3$ dan $s=1$ bertujuan untuk melakukan \textit{feature learning}. Operasi konvolusi dengan $f=3\times 3$ dan $s=2$ bertujuan untuk mengurangi ukuran \textit{feature map}. Arsitektur CBS seperti terlihat pada Gambar \ref{fig:cbs}.
+    Pada YOLOv7, setiap operasi konvolusi selalu diikuti dengan \textit{batch normalization} dan fungsi aktivasi \textit{Sigmoid-weighted Linear Unit} sehingga dinamakan CBS (\textit{Convolution}, \textit{Batch normalization}, \textit{Sigmoid-weighted linear unit}) pada arsitektur YOLOv7. Seperti terlihat pada Gambar \ref{fig:cbs}, YOLOv7 menggunakan 3 jenis operasi konvolusi, yaitu operasi konvolusi dengan $f=1\times 1$ dan $s=1$ dilambangkan dengan $conv(1, 1)$, operasi konvolusi dengan $f=3\times 3$ dan $s=1$ dilambangkan dengan $conv(3, 1)$, dan operasi konvolusi dengan $f=3\times 3$ dan $s=2$ dilambangkan dengan $conv(3, 2)$. $f$ merepresentasikan ukuran \textit{filter} dan $s$ merepresentasikan jumlah \textit{stride}. Operasi konvolusi dengan $f=1\times 1$ dan $s=1$ bertujuan untuk mengurangi dimensi \textit{feature map}. Operasi konvolusi dengan $f=3\times 3$ dan $s=1$ bertujuan untuk melakukan \textit{feature learning}. Operasi konvolusi dengan $f=3\times 3$ dan $s=2$ bertujuan untuk mengurangi ukuran \textit{feature map}. Arsitektur CBS seperti terlihat pada Gambar \ref{fig:cbs}.
 
     \begin{figure}[H]
         \begin{center}
@@ -251,7 +251,7 @@ Berdasarkan kemampuan CNN yang dapat mengolah data citra, neuron pada CNN terdir
     \end{figure}
 
     \subsection{\textit{Pooling Layer}}
-    \textit{Feature map} dari \textit{convolutional layer} diproses oleh \textit{pooling layer}. \textit{Pooling layer} berguna untuk mengurangi ukuran \textit{feature map} tanpa menghilangkan informasi yang dibutuhkan. \textit{Pooling layer} yang sering digunakan pada CNN adalah \textit{max pooling} dan \textit{average pooling}. YOLO-v7 menggunakan \textit{max pooling} dalam arsitekturnya. \textit{Max pooling} mengambil nilai tertinggi pada \textit{feature map} berdasarkan ukuran filter. Perhitungan \textit{max pooling} seperti terlihat pada Persamaan \ref{eq:max-pool} dimana $i=0, \cdots, n;j=0, \cdots, n$. Hasil aktivasi \textit{layer} $l$ adalah $h_{l(x,y)}$ dengan $xy$ yang merepresentasikan baris dan kolom. Proses \textit{max pooling} seperti terlihat pada Gambar \ref{fig:max-pool}.
+    \textit{Feature map} dari \textit{convolutional layer} diproses oleh \textit{pooling layer}. \textit{Pooling layer} berguna untuk mengurangi ukuran \textit{feature map} tanpa menghilangkan informasi yang dibutuhkan. \textit{Pooling layer} yang sering digunakan pada CNN adalah \textit{max pooling} dan \textit{average pooling}. YOLO-v7 menggunakan \textit{max pooling} dalam arsitekturnya. \textit{Max pooling} mengambil nilai tertinggi pada \textit{feature map} berdasarkan ukuran \textit{filter}. Perhitungan \textit{max pooling} seperti terlihat pada Persamaan \ref{eq:max-pool} dimana $i=0, \cdots, n;j=0, \cdots, n$. Hasil aktivasi \textit{layer} $l$ adalah $h_{l(x,y)}$ dengan $xy$ yang merepresentasikan baris dan kolom. Proses \textit{max pooling} seperti terlihat pada Gambar \ref{fig:max-pool}.
 
     \begin{align}
         \label{eq:max-pool}
@@ -308,7 +308,7 @@ Berdasarkan kemampuan CNN yang dapat mengolah data citra, neuron pada CNN terdir
     \end{figure}    
 
     \subsection{\textit{Batch Normalization} (BN)}
-    Pada umumnya, hampir setiap metode \textit{deep learning} mengimplementasikan BN. BN merupakan teknik yang dapat mempercepat proses pelatihan model dan membuat proses pelatihan lebih stabil. Teknik ini melakukan normalisasi vektor pada \textit{hidden layers} menggunakan rata-rata dan varian. BN dapat dilakukan sebelum atau sesudah menjalankan fungsi non-linier. Pada setiap \textit{hidden layer}, BN mengubah nilai pada \textit{hidden layer} menggunakan Persamaan \ref{eq:bn-1}-\ref{eq:bn-4}.
+    Pada umumnya, hampir setiap metode \textit{deep learning} mengimplementasikan BN. BN merupakan teknik yang dapat mempercepat proses pelatihan model dan membuat proses pelatihan lebih stabil. Teknik ini melakukan normalisasi vektor pada \textit{hidden layers} menggunakan rata-rata dan varian. BN dapat dilakukan sebelum atau sesudah menjalankan fungsi non-linier. Pada setiap \textit{hidden layer}, BN mengubah nilai pada \textit{hidden layer} menggunakan Persamaan \ref{eq:bn-1} hingga Persamaan \ref{eq:bn-4}.
 
     \begin{align}
         \label{eq:bn-1}
@@ -324,7 +324,7 @@ Berdasarkan kemampuan CNN yang dapat mengolah data citra, neuron pada CNN terdir
     Pertama, BN menghitung nilai rata-rata dan varian menggunakan Persamaan \ref{eq:bn-1} dan \ref{eq:bn-2}. Kemudian dilakukan normalisasi menggunakan Persamaan \ref{eq:bn-3} sehingga data keluaran berdistribusi normal dimana $\epsilon = 2.71828$ untuk stabilitas numerik. Langkah terakhir menghitung keluaran $\breve{Z}$ dengan menerapkan transformasi linier terhadap $\gamma$ dan $\beta$ seperti Persamaan \ref{eq:bn-4}.
 
     \subsection{\textit{Leaky Rectified Linear Unit} (Leaky ReLU)}
-    ReLU seringkali digunakan pada masalah \textit{deep learning} terutama pada \textit{computer vision}. ReLU memiliki tingkat konvergensi yang lebih baik daripada fungsi aktivasi $\sigma$ (\textit{sigmoid}) dan $tanh$. Hasil keluaran ReLU memiliki ambang batas $0$ sehingga jaringan lebih cepat karena memiliki perhitungan yang efisien. Akan tetapi, ReLU memiliki masalah \textit{dying ReLU} dimana ReLU tidak berfungsi untuk semua data masukan karena bernilai kurang dari nol. Berawal dari hal ini, Leaky ReLU muncul dengan mengubah gradien ReLU sedikit ke kiri sehingga Leaky ReLU dapat menghasilkan beberapa nilai jika data masukan kurang dari nol. Rumus Leaky ReLU seperti terlihat pada Persamaan \ref{eq:l-relu}. Grafik Leaky ReLU seperti terlihat pada Gambar \ref{fig:l-relu} \citep{Xu2015}.
+    ReLU seringkali digunakan pada masalah \textit{deep learning} terutama pada \textit{computer vision}. ReLU memiliki tingkat konvergensi yang lebih baik daripada fungsi aktivasi $\sigma$ (\textit{sigmoid}) dan $tanh$. Hasil keluaran ReLU memiliki ambang batas $0$ sehingga jaringan lebih cepat karena memiliki perhitungan yang efisien. Akan tetapi, ReLU memiliki masalah \textit{dying ReLU} dimana ReLU tidak berfungsi untuk semua data masukan karena bernilai kurang dari nol. Berawal dari hal ini, Leaky ReLU muncul dengan mengubah gradien ReLU sedikit ke kiri sehingga Leaky ReLU dapat menghasilkan beberapa nilai jika data masukan kurang dari nol. Rumus Leaky ReLU seperti terlihat pada Persamaan \ref{eq:l-relu}. Grafik Leaky ReLU seperti terlihat pada Gambar \ref{fig:l-relu} \citep{xu2015empirical}.
 
     \begin{align}
         \label{eq:l-relu}
@@ -336,7 +336,7 @@ Berdasarkan kemampuan CNN yang dapat mengolah data citra, neuron pada CNN terdir
             \includegraphics[width=8cm]{img/bab2/lrelu.png}
             \caption{Grafik Leaky ReLU}
             \label{fig:l-relu}
-            Sumber: \citep{Xu2015}
+            Sumber: \citep{xu2015empirical}
         \end{center}
     \end{figure}
 
@@ -388,7 +388,7 @@ YOLO merupakan algoritma deteksi objek berdasarkan \textit{Fully Connected Neura
     \end{figure}
 
 \section{\textit{Confusion Matrix}}
-\textit{Confusion matrix} adalah tabel yang digunakan untuk menggambarkan performa dari sebuah algoritma klasifikasi \citep{nasution2022sentiment, julianto2021performance}. Secara matematis, \textit{confusion matrix} berupa matrix $C_{ij}$ yang berisi nilai integer yang tidak negatif dengan $i=1, 2, 3, \cdots, n,j=1, 2, 3, \cdots, n$ dimana $n$ merupakan jumlah kelas pada permasalahan klasifikasi. Elemen $C_{ij}$ merupakan hasil klasifikasi selama proses pengujian model. Jika $i=j$ maka kelas $i$ terklasifikasi dengan benar pada kelas $j$. Sehingga dapat dikatakan elemen pada diagonal utama matriks merupakan semua kelas yang terklasifikasi dengan benar. Sedangkan elemen tidak nol lainnya menandakan kesalahan klasifikasi \citep{Susmaga2004}. Setiap elemen pada \textit{confusion matrix} termasuk ke dalam beberapa kategori berikut \citep{Shultz2017}:
+\textit{Confusion matrix} adalah tabel yang digunakan untuk menggambarkan performa dari sebuah algoritma klasifikasi \citep{nasution2022sentiment, julianto2021performance}. Secara matematis, \textit{confusion matrix} berupa matrix $C_{ij}$ yang berisi nilai integer yang tidak negatif dengan $i=1, 2, 3, \cdots, n$ dan $j=1, 2, 3, \cdots, n$ dimana $n$ merupakan jumlah kelas pada permasalahan klasifikasi. Elemen $C_{ij}$ merupakan hasil klasifikasi selama proses pengujian model. Jika $i=j$ maka kelas $i$ terklasifikasi dengan benar pada kelas $j$. Sehingga dapat dikatakan elemen pada diagonal utama matriks merupakan semua kelas yang terklasifikasi dengan benar. Sedangkan elemen tidak nol lainnya menandakan kesalahan klasifikasi \citep{Susmaga2004}. Setiap elemen pada \textit{confusion matrix} termasuk ke dalam beberapa kategori berikut \citep{Shultz2017}:
 \begin{enumerate}
     \item \textit{True Positive} (TP) menunjukkan ketepatan model dalam mengklasifikasikan kelas positif sebagai kelas positif.
     \item \textit{False Positive} (FP) menunjukkan ketepatan model dalam mengklasifikasikan kelas positif sebagai kelas negatif.
@@ -475,7 +475,7 @@ Dalam menentukan nilai IoU, sangat penting untuk memperhatikan ambang batas IoU.
 \end{figure}
 
 \section{\textit{mean Average Precision} (mAP)}
-mAP merupakan salah satu metode evaluasi model terutama pada model deteksi objek, seperti Fast R-CNN, MobileNet SSD, dan YOLO. Semakin baik model deteksi objek maka semakin tinggi nilai mAP. mAP menghitung rata-rata \textit{Average Precision} (AP) per kelas seperti terlihat pada Persamaan \ref{eq:map}. AP merupakan perhitungan \textit{precision} dan \textit{recall} pada setiap kelas seperti terlihat pada Persamaan \ref{eq:ap}. Rasio antara kelas positif yang diprediksi dengan benar terhadap seluruh kelas yang diprediksi sebagai positif disebut \textit{precision}. Rasion antara kelas positif yang diprediksi dengan benar terhadap seluruh kelas positif disebut \textit{recall}. Persamaan \ref{eq:precision} dan \ref{eq:recall} menunjukkan perhitungan \textit{precision} dan \textit{recall} dimana $P$ dan $R$ merupakan \textit{precision} dan \textit{recall} \citep{Shultz2017}.
+mAP merupakan salah satu metode evaluasi model terutama pada model deteksi objek, seperti Fast R-CNN, MobileNet SSD, dan YOLO. Semakin baik model deteksi objek maka semakin tinggi nilai mAP. mAP menghitung rata-rata \textit{Average Precision} (AP) per kelas seperti terlihat pada Persamaan \ref{eq:map}. AP merupakan perhitungan \textit{precision} dan \textit{recall} pada setiap kelas seperti terlihat pada Persamaan \ref{eq:ap}. Rasio antara kelas positif yang diprediksi dengan benar terhadap seluruh kelas yang diprediksi sebagai positif disebut \textit{precision}. Rasio antara kelas positif yang diprediksi dengan benar terhadap seluruh kelas positif disebut \textit{recall}. Persamaan \ref{eq:precision} dan \ref{eq:recall} menunjukkan perhitungan \textit{precision} dan \textit{recall} dimana $P$ dan $R$ merupakan \textit{precision} dan \textit{recall} \citep{Shultz2017}.
 \begin{align}
     \label{eq:precision}
     P &= \frac{TP}{TP+FP}\\

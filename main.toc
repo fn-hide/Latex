@@ -43,36 +43,36 @@
 \contentsline {subsection}{\numberline {2.6.2.}\textit {Pooling Layer}}{29}{subsection.2.6.2}%
 \contentsline {subsection}{\numberline {2.6.3.}\textit {Upsample Layer}}{30}{subsection.2.6.3}%
 \contentsline {subsection}{\numberline {2.6.4.}\textit {Batch Normalization} (BN)}{32}{subsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.6.5.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{32}{subsection.2.6.5}%
-\contentsline {subsection}{\numberline {2.6.6.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{33}{subsection.2.6.6}%
+\contentsline {subsection}{\numberline {2.6.5.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{33}{subsection.2.6.5}%
+\contentsline {subsection}{\numberline {2.6.6.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{34}{subsection.2.6.6}%
 \contentsline {section}{\numberline {2.7.}\textit {You Only Look Once version 7} (YOLO-v7)}{34}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1.}\textit {Efficient Layer Aggregation Networks} (ELAN)}{36}{subsection.2.7.1}%
 \contentsline {section}{\numberline {2.8.}\textit {Confusion Matrix}}{37}{section.2.8}%
-\contentsline {section}{\numberline {2.9.}\textit {Intersection over Union} (IoU)}{38}{section.2.9}%
-\contentsline {section}{\numberline {2.10.}\textit {mean Average Precision} (mAP)}{40}{section.2.10}%
-\contentsline {section}{\numberline {2.11.}Integrasi Keislaman}{41}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1.}Hikmah Orang Sakit}{42}{subsection.2.11.1}%
-\contentsline {subsection}{\numberline {2.11.2.}Ikhtiar Orang Sakit}{43}{subsection.2.11.2}%
-\contentsline {chapter}{\numberline {III}METODE PENELITIAN}{45}{chapter.3}%
-\contentsline {section}{\numberline {3.1.}Jenis Penelitian}{45}{section.3.1}%
-\contentsline {section}{\numberline {3.2.}Jenis dan Sumber Data}{45}{section.3.2}%
-\contentsline {section}{\numberline {3.3.}Kerangka Penelitian}{46}{section.3.3}%
-\contentsline {chapter}{\numberline {IV}HASIL DAN PEMBAHASAN}{49}{chapter.4}%
-\contentsline {section}{\numberline {4.1.}\textit {Preprocessing}}{49}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1.}\textit {Resize}}{49}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2.}\textit {Annotation}}{51}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2.}Pelatihan Model}{53}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1.}\textit {Convolutional Layer}}{54}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2.}\textit {Batch Normalization}}{58}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{60}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{61}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5.}\textit {Pooling Layer}}{63}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6.}\textit {Upsample Layer}}{66}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7.}\textit {Efficient Layer Aggregation Networks (ELAN)}}{68}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8.}\textit {Intesection over Union} (IoU)}{69}{subsection.4.2.8}%
-\contentsline {section}{\numberline {4.3.}Pengujian dan Evaluasi Sistem}{70}{section.4.3}%
-\contentsline {section}{\numberline {4.4.}Integrasi Keilmuan}{81}{section.4.4}%
-\contentsline {chapter}{\numberline {V}PENUTUP}{84}{chapter.5}%
-\contentsline {section}{\numberline {5.1.}Kesimpulan}{84}{section.5.1}%
-\contentsline {section}{\numberline {5.2.}Saran}{85}{section.5.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{85}{Item.36}%
+\contentsline {section}{\numberline {2.9.}\textit {Intersection over Union} (IoU)}{39}{section.2.9}%
+\contentsline {section}{\numberline {2.10.}\textit {mean Average Precision} (mAP)}{41}{section.2.10}%
+\contentsline {section}{\numberline {2.11.}Integrasi Keislaman}{42}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1.}Hikmah Orang Sakit}{43}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2.}Ikhtiar Orang Sakit}{44}{subsection.2.11.2}%
+\contentsline {chapter}{\numberline {III}METODE PENELITIAN}{46}{chapter.3}%
+\contentsline {section}{\numberline {3.1.}Jenis Penelitian}{46}{section.3.1}%
+\contentsline {section}{\numberline {3.2.}Jenis dan Sumber Data}{46}{section.3.2}%
+\contentsline {section}{\numberline {3.3.}Kerangka Penelitian}{47}{section.3.3}%
+\contentsline {chapter}{\numberline {IV}HASIL DAN PEMBAHASAN}{50}{chapter.4}%
+\contentsline {section}{\numberline {4.1.}\textit {Preprocessing}}{50}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1.}\textit {Resize}}{50}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2.}\textit {Annotation}}{52}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2.}Pelatihan Model}{54}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1.}\textit {Convolutional Layer}}{55}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2.}\textit {Batch Normalization}}{59}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3.}\textit {Leaky Rectified Linear Unit} (Leaky ReLU)}{61}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4.}\textit {Sigmoid-weighted Linear Unit} (SiLU)}{62}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5.}\textit {Pooling Layer}}{64}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6.}\textit {Upsample Layer}}{67}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7.}\textit {Efficient Layer Aggregation Networks (ELAN)}}{69}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8.}\textit {Intesection over Union} (IoU)}{70}{subsection.4.2.8}%
+\contentsline {section}{\numberline {4.3.}Pengujian dan Evaluasi Sistem}{71}{section.4.3}%
+\contentsline {section}{\numberline {4.4.}Integrasi Keilmuan}{82}{section.4.4}%
+\contentsline {chapter}{\numberline {V}PENUTUP}{85}{chapter.5}%
+\contentsline {section}{\numberline {5.1.}Kesimpulan}{85}{section.5.1}%
+\contentsline {section}{\numberline {5.2.}Saran}{86}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{86}{Item.36}%
