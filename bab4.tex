@@ -258,7 +258,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
                                 &= -0.589056\frac{1}{1+2.718^{0.589056}} \\
                                 &= -0.210206 \\
         \vdots \\
-        a_k(z_k)_{(319, 319)}   &= z_k\frac{1}{1+e^{-(z_k)}} \\
+        a_k(z_k)_{(639, 639)}   &= z_k\frac{1}{1+e^{-(z_k)}} \\
                                 &= -5.816965\frac{1}{1+2.718^{5.816965}} \\
                                 &= -0.017264 \\
     \end{align*}
@@ -275,7 +275,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -0.187015 & -0.076465 & -0.076651 & -0.076651 & \cdots & -0.141928 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -0.021063 & -0.012066 & -0.013472 & -0.015661 & \cdots & -0.017264 \\
-        \end{pmatrix}_{320\times 320}
+        \end{pmatrix}_{640\times 640}
     \end{align*}
 
     Perhitungan fungsi aktivasi SiLU terjadi hingga pada lapisan terakhir. Visualisasi \textit{feature map} yang telah melewati fungsi aktivasi Silu seperti terlihat pada Gambar \ref{fig:d-silu}.
@@ -296,7 +296,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
         P_{(0, 0)}      &= max(-0.210206, 0.605375, -0.181836, -0.072654)\\
                         &= 0.605375 \\
         \vdots \\
-        P_{(319, 319)}  &= max(-0.087075, -0.128279, -0.017056, -0.017264)\\
+        P_{(79, 79)}  &= max(-0.087075, -0.128279, -0.017056, -0.017264)\\
                         &= -0.128279 \\
     \end{align*}
 
@@ -330,7 +330,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
     Proses untuk mengembalikan ukuran \textit{feature map} dapat dilakukan menggunakan \textit{upsample layer}. \textit{Upsample layer} mengembalikan ukuran \textit{feature map} seperti pada ukuran sebelumnya. \textit{Unpooling layer} adalah nama lain dari \textit{upsample layer}. Sehingga, \textit{upsample layer} dapat diimplementasikan setelah \textit{feature map} melewati \textit{downsample layer} atau \textit{pooling layer} untuk mengurangi waktu komputasi. Perhitungan \textit{upsample layer} pada YOLOv7 menggunakan metode \textit{nearest} atau mempertimbangkan nilai piksel di sekitarnya untuk melakukan \textit{upsample}. Ilustrasi \textit{upsample layer} seperti terlihat pada Gambar \ref{fig:il-nearest}. \textit{Upsample layer} pada arsitektur YOLOv7 terletak setelah banyak proses konvolusi dan \textit{max-pool} sehingga \textit{feature map} yang telah melewati \textit{upsample layer} memiliki ukuran $40\times 40$ seperti di bawah ini.
 
     \begin{align*}
-        R_{(40, 40, 0)} = 
+        R_{(:, :, 0)} = 
         \begin{pmatrix}
             -0.240868 & -0.240868 & -0.240287 & -0.240287 & \cdots & -0.238043 \\
             -0.240868 & -0.240868 & -0.240287 & -0.240287 & \cdots & -0.238043 \\
@@ -339,7 +339,7 @@ Setelah proses \textit{preprocessing}, citra akan masuk ke tahap \textit{feature
             -0.251152 & -0.251152 & -0.236841 & -0.236841 & \cdots & -0.256989 \\
             \vdots    & \vdots    & \vdots    & \vdots    & \ddots & \vdots \\
             -0.262205 & -0.262205 & -0.264320 & -0.264320 & \cdots & -0.242232 \\
-        \end{pmatrix}
+        \end{pmatrix}_{80, 80}
     \end{align*}
 
     Visualisasi \textit{feature map} yang telah melewati \textit{upsample layer} seperti terlihat pada Gambar \ref{fig:d-uplayer}.

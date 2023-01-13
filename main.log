@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.27)  13 JAN 2023 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.27)  13 JAN 2023 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1529,7 +1529,7 @@ File: img/bab4/mp-layer.png Graphic file (type png)
 Package pdftex.def Info: img/bab4/mp-layer.png  used on input line 322.
 (pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
  [66] [67 <./img/bab4/mp-layer.png>]
-Overfull \hbox (13.10306pt too wide) detected at line 343
+Overfull \hbox (20.6865pt too wide) detected at line 343
 []
  []
 
@@ -1822,7 +1822,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,17n,103p,3123b,3667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/arabtex/xnsh14.pfb>
-Output written on main.pdf (114 pages, 29332647 bytes).
+Output written on main.pdf (114 pages, 29332672 bytes).
 PDF statistics:
  1751 PDF objects out of 2073 (max. 8388607)
  1491 compressed objects within 15 object streams

@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex main"] 1673584694 "main.aux" "main.bbl" "main" 1673585335
+["bibtex main"] 1673584694 "main.aux" "main.bbl" "main" 1673588419
   "Skripsi.bib" 1673584666 165759 20fde07a46b940b4c2ff1ba5fff4ca2b ""
   "c:/texlive/2022/texmf-dist/bibtex/bst/apalike2/apalike2.bst" 1664179718 26644 77647ad43a99e9d8b2661f2ca815cba7 ""
-  "main.aux" 1673585334 34355 e969fc8b60fd0584ddbade6e45282817 "pdflatex"
+  "main.aux" 1673588418 34355 e969fc8b60fd0584ddbade6e45282817 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1673585322 "d:/Huda 2019/Latex/main.tex" "main.pdf" "main" 1673585335
+["pdflatex"] 1673588408 "d:/Huda 2019/Latex/main.tex" "main.pdf" "main" 1673588419
   "bab1.tex" 1673579686 18973 6b3e9d62ef7695959249cfa61f2a78e2 ""
   "bab2.tex" 1673584667 48837 5d82beacba78d2ce3756391c2ca4fcca ""
   "bab3.tex" 1673430240 4921 9fc569a03eba8e4bbf79f7dbd3dc54df ""
-  "bab4.tex" 1673513060 52333 1d34659727953f5771b8c3ae5222d924 ""
+  "bab4.tex" 1673588407 52338 e0225dad4add1a531a2bdb75e643da00 ""
   "bab5.tex" 1673411776 3247 90d48ff5ed688a3026a2cfdce1a58605 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1664182465 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1664182862 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -328,13 +328,13 @@
   "img/bab4/silu-layer.png" 1673411776 512387 1a7fde4c5fd6bd56f8cd99331f33ea04 ""
   "img/bab4/up-layer.png" 1673411776 60502 403df2a266a6cc461822c0c78ff2a306 ""
   "logouinsa.png" 1673411776 61952 698773f75688d2299a303e50e04f234a ""
-  "main.aux" 1673585334 34355 e969fc8b60fd0584ddbade6e45282817 "pdflatex"
+  "main.aux" 1673588418 34355 e969fc8b60fd0584ddbade6e45282817 "pdflatex"
   "main.bbl" 1673584695 19601 098cc8f968c8ceafc8fd62621e6958eb "bibtex main"
-  "main.lof" 1673585334 6775 e7d40fe74ef81df26fe7d97292ee01ab "pdflatex"
-  "main.lot" 1673585334 586 0ed4c1e90eb4d448ebb2ccc8947f8904 "pdflatex"
-  "main.out" 1673585334 11763 0e48206dec739b66f55cf5ade8a6ca98 "pdflatex"
+  "main.lof" 1673588418 6775 e7d40fe74ef81df26fe7d97292ee01ab "pdflatex"
+  "main.lot" 1673588418 586 0ed4c1e90eb4d448ebb2ccc8947f8904 "pdflatex"
+  "main.out" 1673588418 11763 0e48206dec739b66f55cf5ade8a6ca98 "pdflatex"
   "main.tex" 1673499512 10207 350d8969d21f16f988a5bb4577fc25b0 ""
-  "main.toc" 1673585334 6558 0f9b4783696cc36fa51200d701aa1342 "pdflatex"
+  "main.toc" 1673588418 6558 0f9b4783696cc36fa51200d701aa1342 "pdflatex"
   "mathuinsa.cls" 1673411776 18995 2d549d0f2a3fbdc518e9b5f1591eaa99 ""
   (generated)
   "main.aux"
