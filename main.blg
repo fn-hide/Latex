@@ -1,10 +1,10 @@
-This is BibTeX, Version 0.99d (TeX Live 2022)
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike2.bst
 Database file #1: Skripsi.bib
 Warning--entry type for "Jocher2020" isn't style-file defined
---line 403 of file Skripsi.bib
+--line 437 of file Skripsi.bib
 Reallocated buffer (elt_size=1) to 40000 items from 20000.
 Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
 Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
@@ -16,45 +16,45 @@ Warning--empty journal in Ge2021
 Warning--empty journal in Saherish2020a
 Warning--there's a number but no volume in Umamaheswari2018
 Warning--empty journal in Zou2019
-You've used 72 entries,
+You've used 74 entries,
             2229 wiz_defined-function locations,
-            950 strings with 19370 characters,
-and the built_in function-call counts, 31649 in all, are:
-= -- 3041
-> -- 1669
-< -- 38
-+ -- 588
-- -- 583
-* -- 2821
-:= -- 5568
-add.period$ -- 213
-call.type$ -- 72
-change.case$ -- 648
-chr.to.int$ -- 69
-cite$ -- 76
-duplicate$ -- 1086
-empty$ -- 1934
-format.name$ -- 687
-if$ -- 6063
-int.to.chr$ -- 4
+            962 strings with 19814 characters,
+and the built_in function-call counts, 32705 in all, are:
+= -- 3141
+> -- 1725
+< -- 39
++ -- 611
+- -- 603
+* -- 2913
+:= -- 5741
+add.period$ -- 219
+call.type$ -- 74
+change.case$ -- 668
+chr.to.int$ -- 70
+cite$ -- 78
+duplicate$ -- 1127
+empty$ -- 2002
+format.name$ -- 709
+if$ -- 6275
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 71
-newline$ -- 360
-num.names$ -- 218
-pop$ -- 557
+missing$ -- 73
+newline$ -- 370
+num.names$ -- 224
+pop$ -- 579
 preamble$ -- 1
-purify$ -- 650
+purify$ -- 670
 quote$ -- 0
-skip$ -- 866
+skip$ -- 897
 stack$ -- 0
-substring$ -- 1985
-swap$ -- 166
-text.length$ -- 14
+substring$ -- 2052
+swap$ -- 177
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 428
+type$ -- 440
 warning$ -- 4
-while$ -- 253
+while$ -- 261
 width$ -- 0
-write$ -- 916
+write$ -- 942
 (There were 6 warnings)

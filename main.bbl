@@ -178,8 +178,14 @@ Li, C., Li, L., Jiang, H., Weng, K., Geng, Y., Li, L., Ke, Z., Li, Q., Cheng,
   Applications}.
 \newblock {\em arXiv preprint arXiv:2209.02976}.
 
-\bibitem[Li et~al., 2022b]{li2022epidemiology}
-Li, Y., Lin, B., Liang, S., Tao, J., Zhang, L., Wang, J., \& Zheng, J. (2022b).
+\bibitem[Li et~al., 2022b]{li2022thermal}
+Li, S., Wang, Y., Feng, C., Zhang, D., Li, H., Huang, W., \& Shi, L. (2022b).
+\newblock A thermal imaging flame-detection model for firefighting robot based
+  on yolov4-f model.
+\newblock {\em Fire}, 5(5), 172.
+
+\bibitem[Li et~al., 2022c]{li2022epidemiology}
+Li, Y., Lin, B., Liang, S., Tao, J., Zhang, L., Wang, J., \& Zheng, J. (2022c).
 \newblock {Epidemiology and survival of patients with malignant carotid body
   tumors in the SEER database}.
 \newblock {\em Journal of Vascular Surgery}.
@@ -430,6 +436,13 @@ Zhang, Y.-M., Lee, C.-C., Hsieh, J.-W., \& Fan, K.-C. (2021).
 \newblock {CSL-YOLO: A New Lightweight Object Detection System for Edge
   Computing}.
 \newblock {\em arXiv preprint arXiv:2107.04829}.
+
+\bibitem[Zhao et~al., 2023]{zhao2023yolov7}
+Zhao, H., Zhang, H., \& Zhao, Y. (2023).
+\newblock Yolov7-sea: Object detection of maritime uav images based on improved
+  yolov7.
+\newblock In {\em Proceedings of the IEEE/CVF Winter Conference on Applications
+  of Computer Vision}  (pp.\ 233--238).
 
 \bibitem[Zou et~al., 2019]{Zou2019}
 Zou, Z., Shi, Z., Guo, Y., \& Ye, J. (2019).

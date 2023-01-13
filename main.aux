@@ -5,10 +5,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -74,6 +77,9 @@
 \citation{azevedo2020stochastic}
 \citation{zhang2021csl}
 \citation{liu2020wqt}
+\citation{Wang2022}
+\citation{zhao2023yolov7}
+\citation{li2022thermal}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2.}Rumusan Masalah}{8}{section.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.3.}Tujuan Penelitian}{9}{section.1.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.4.}Manfaat Penelitian}{9}{section.1.4}\protected@file@percent }
@@ -356,49 +362,51 @@
 \bibcite{julianto2021performance}{{26}{2021}{{Julianto et~al.}}{{}}}
 \bibcite{Kusumanto2011}{{27}{2011}{{Kusumanto \& Tompunu}}{{}}}
 \bibcite{Li2022}{{28}{2022a}{{Li et~al.}}{{}}}
-\bibcite{li2022epidemiology}{{29}{2022b}{{Li et~al.}}{{}}}
-\bibcite{liu2020wqt}{{30}{2020}{{Liu et~al.}}{{}}}
-\bibcite{Long2020}{{31}{2020}{{Long et~al.}}{{}}}
-\bibcite{Ma2020}{{32}{2020}{{Ma \& Karki}}{{}}}
-\bibcite{Morsy2018}{{33}{2018}{{Morsy}}{{}}}
-\bibcite{Muaziroh2018}{{34}{2018}{{Muaziroh \& Sholiha}}{{}}}
-\bibcite{nasution2022sentiment}{{35}{2022}{{Nasution et~al.}}{{}}}
-\bibcite{Nelson2020}{{36}{2020}{{Nelson \& Solawetz}}{{}}}
-\bibcite{Nersisson2021a}{{37}{2021}{{Nersisson et~al.}}{{}}}
-\bibcite{Nie2019a}{{38}{2019}{{Nie et~al.}}{{}}}
-\bibcite{Nugroho2019}{{39}{2019}{{Nugroho et~al.}}{{}}}
-\bibcite{Nurlitasari2022}{{40}{2022}{{Nurlitasari et~al.}}{{}}}
-\bibcite{OShea2015}{{41}{2015}{{O'Shea \& Nash}}{{}}}
-\bibcite{Park2022}{{42}{2022}{{Park et~al.}}{{}}}
-\bibcite{Balas2018}{{43}{2021}{{Pathak et~al.}}{{}}}
-\bibcite{Ramdhan2019}{{44}{2019}{{Ramdhan}}{{}}}
-\bibcite{Rastogi2020}{{45}{2020}{{Rastogi et~al.}}{{}}}
-\bibcite{Ratna2020}{{46}{2020}{{Ratna}}{{}}}
-\bibcite{Redmon2016a}{{47}{2016}{{Redmon et~al.}}{{}}}
-\bibcite{Redmon2017}{{48}{2017}{{Redmon \& Farhadi}}{{}}}
-\bibcite{Redmon2018}{{49}{2018}{{Redmon \& Farhadi}}{{}}}
-\bibcite{Katsir2015}{{50}{2015}{{Rudianto}}{{}}}
-\bibcite{Saherish2020a}{{51}{2020}{{Saherish \& Megha}}{{}}}
-\bibcite{Sang2019}{{52}{2019}{{Sang \& Deng}}{{}}}
-\bibcite{Septiaji2018}{{53}{2018}{{Septiaji \& Firdausy}}{{}}}
-\bibcite{shafiee2017fast}{{54}{2017}{{Shafiee et~al.}}{{}}}
-\bibcite{Shedden-Mora2020}{{55}{2020}{{Shedden-Mora et~al.}}{{}}}
-\bibcite{Shultz2017}{{56}{2017}{{Shultz \& Fahlman}}{{}}}
-\bibcite{Strobel2019}{{57}{2019}{{Strobel et~al.}}{{}}}
-\bibcite{AhmedThaajwer2020a}{{58}{2020}{{Supaha et~al.}}{{}}}
-\bibcite{Susmaga2004}{{59}{2004}{{Susmaga}}{{}}}
-\bibcite{Tschandl2018}{{60}{2018}{{Tschandl et~al.}}{{}}}
-\bibcite{Umamaheswari2018}{{61}{2018}{{Umamaheswari \& Geetha}}{{}}}
-\bibcite{Waks2019}{{62}{2019}{{Waks \& Winer}}{{}}}
-\bibcite{Wanga}{{63}{2021a}{{Wang et~al.}}{{}}}
-\bibcite{Wang2022}{{64}{2022}{{Wang et~al.}}{{}}}
-\bibcite{Wang}{{65}{2021b}{{Wang et~al.}}{{}}}
-\bibcite{Wu2021b}{{66}{2021a}{{Wu et~al.}}{{}}}
-\bibcite{Wu2022}{{67}{2022}{{Wu et~al.}}{{}}}
-\bibcite{Wu2021}{{68}{2021b}{{Wu et~al.}}{{}}}
-\bibcite{xu2022pp}{{69}{2022}{{Xu et~al.}}{{}}}
-\bibcite{Yani2019}{{70}{2019}{{Yani et~al.}}{{}}}
-\bibcite{zhang2021csl}{{71}{2021}{{Zhang et~al.}}{{}}}
-\bibcite{Zou2019}{{72}{2019}{{Zou et~al.}}{{}}}
+\bibcite{li2022thermal}{{29}{2022b}{{Li et~al.}}{{}}}
+\bibcite{li2022epidemiology}{{30}{2022c}{{Li et~al.}}{{}}}
+\bibcite{liu2020wqt}{{31}{2020}{{Liu et~al.}}{{}}}
+\bibcite{Long2020}{{32}{2020}{{Long et~al.}}{{}}}
+\bibcite{Ma2020}{{33}{2020}{{Ma \& Karki}}{{}}}
+\bibcite{Morsy2018}{{34}{2018}{{Morsy}}{{}}}
+\bibcite{Muaziroh2018}{{35}{2018}{{Muaziroh \& Sholiha}}{{}}}
+\bibcite{nasution2022sentiment}{{36}{2022}{{Nasution et~al.}}{{}}}
+\bibcite{Nelson2020}{{37}{2020}{{Nelson \& Solawetz}}{{}}}
+\bibcite{Nersisson2021a}{{38}{2021}{{Nersisson et~al.}}{{}}}
+\bibcite{Nie2019a}{{39}{2019}{{Nie et~al.}}{{}}}
+\bibcite{Nugroho2019}{{40}{2019}{{Nugroho et~al.}}{{}}}
+\bibcite{Nurlitasari2022}{{41}{2022}{{Nurlitasari et~al.}}{{}}}
+\bibcite{OShea2015}{{42}{2015}{{O'Shea \& Nash}}{{}}}
+\bibcite{Park2022}{{43}{2022}{{Park et~al.}}{{}}}
+\bibcite{Balas2018}{{44}{2021}{{Pathak et~al.}}{{}}}
+\bibcite{Ramdhan2019}{{45}{2019}{{Ramdhan}}{{}}}
+\bibcite{Rastogi2020}{{46}{2020}{{Rastogi et~al.}}{{}}}
+\bibcite{Ratna2020}{{47}{2020}{{Ratna}}{{}}}
+\bibcite{Redmon2016a}{{48}{2016}{{Redmon et~al.}}{{}}}
+\bibcite{Redmon2017}{{49}{2017}{{Redmon \& Farhadi}}{{}}}
+\bibcite{Redmon2018}{{50}{2018}{{Redmon \& Farhadi}}{{}}}
+\bibcite{Katsir2015}{{51}{2015}{{Rudianto}}{{}}}
+\bibcite{Saherish2020a}{{52}{2020}{{Saherish \& Megha}}{{}}}
+\bibcite{Sang2019}{{53}{2019}{{Sang \& Deng}}{{}}}
+\bibcite{Septiaji2018}{{54}{2018}{{Septiaji \& Firdausy}}{{}}}
+\bibcite{shafiee2017fast}{{55}{2017}{{Shafiee et~al.}}{{}}}
+\bibcite{Shedden-Mora2020}{{56}{2020}{{Shedden-Mora et~al.}}{{}}}
+\bibcite{Shultz2017}{{57}{2017}{{Shultz \& Fahlman}}{{}}}
+\bibcite{Strobel2019}{{58}{2019}{{Strobel et~al.}}{{}}}
+\bibcite{AhmedThaajwer2020a}{{59}{2020}{{Supaha et~al.}}{{}}}
+\bibcite{Susmaga2004}{{60}{2004}{{Susmaga}}{{}}}
+\bibcite{Tschandl2018}{{61}{2018}{{Tschandl et~al.}}{{}}}
+\bibcite{Umamaheswari2018}{{62}{2018}{{Umamaheswari \& Geetha}}{{}}}
+\bibcite{Waks2019}{{63}{2019}{{Waks \& Winer}}{{}}}
+\bibcite{Wanga}{{64}{2021a}{{Wang et~al.}}{{}}}
+\bibcite{Wang2022}{{65}{2022}{{Wang et~al.}}{{}}}
+\bibcite{Wang}{{66}{2021b}{{Wang et~al.}}{{}}}
+\bibcite{Wu2021b}{{67}{2021a}{{Wu et~al.}}{{}}}
+\bibcite{Wu2022}{{68}{2022}{{Wu et~al.}}{{}}}
+\bibcite{Wu2021}{{69}{2021b}{{Wu et~al.}}{{}}}
+\bibcite{xu2022pp}{{70}{2022}{{Xu et~al.}}{{}}}
+\bibcite{Yani2019}{{71}{2019}{{Yani et~al.}}{{}}}
+\bibcite{zhang2021csl}{{72}{2021}{{Zhang et~al.}}{{}}}
+\bibcite{zhao2023yolov7}{{73}{2023}{{Zhao et~al.}}{{}}}
+\bibcite{Zou2019}{{74}{2019}{{Zou et~al.}}{{}}}
 \newlabel{appendix: filter}{{5.2.}{95}{Saran}{chapter*.64}{}}
 \gdef \@abspage@last{113}
